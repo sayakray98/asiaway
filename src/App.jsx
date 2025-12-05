@@ -8,27 +8,18 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact/Contact";
 
 
+
+
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <Router>
-        <Routes>
-          <Route path="/home" element={<Home />} />
-
-          <Route path="/contact" element={<Contact />} />
-
-              
-       
-          <Route path="/*" element={<Home />} />
-
-        
-        </Routes>
-      </Router>
-      
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<Home />} />
+    </Routes>
   );
 }
 
 export default App;
+
