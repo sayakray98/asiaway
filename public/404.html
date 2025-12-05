@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/asiaway/" />
+    <script>
+      // Single Page Application routing fix for GitHub Pages
+      const redirect = window.location.pathname.replace("/asiaway", "");
+      localStorage.setItem("redirect", redirect);
+      window.location.href = "/asiaway/";
+    </script>
   </head>
   <body></body>
 </html>

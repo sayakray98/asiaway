@@ -29,6 +29,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>website</title>
+
+    <script>
+  const redirect = localStorage.getItem("redirect");
+  if (redirect) {
+    localStorage.removeItem("redirect");
+    window.history.replaceState(null, "", "/asiaway" + redirect);
+  }
+</script>
+
   </head>
   <body>
     <div id="root"></div>
