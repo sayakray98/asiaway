@@ -45,7 +45,7 @@
 }
 
 .enquiedetails a:hover {
-  background-color: #1E703E;
+  background-color: #1e703e;
   transition: 0.2s all;
   color: white;
 }
@@ -77,20 +77,19 @@
   color: white;
 }
 
-footer{
+footer {
   position: relative;
- 
 }
 
 .attractiondetails {
-    background-color: #1E703E;
-    color: white;
-    padding: 146px 20px;
-    transform: translate(93px, -37px);
-    bottom: -34rem;
-    right: 13%;
-    z-index: 999;
-    position: absolute;
+  background-color: #1e703e;
+  color: white;
+  padding: 146px 20px;
+  transform: translate(93px, -37px);
+  bottom: -16.2cm;
+  right: 13%;
+  z-index: 999;
+  position: absolute;
 }
 
 .attractiondetailssub {
