@@ -1,0 +1,123 @@
+import React from "react";
+import logo from "../assets/images/logowhite.png";
+import "./Header/Header.css";
+import { Link } from "react-router-dom";
+
+export default function Header() {
+  return (
+    <>
+      <div className="header-main"></div>
+      <header className="header-below">
+        <nav className="navbar navbar-expand-lg p-0">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-lg-4">
+                <Link
+                  className="navbar-brand pl-5 ml-5"
+                  to="/"
+                  style={{ textAlign: "left" }}
+                >
+                  <img src={logo} alt="" style={{ width: "48%" }} />
+                </Link>
+
+                <button
+                  className="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+              </div>
+
+              <div className="col-lg-8 d-flex align-items-center justify-content-center">
+                <div className="navdetails">
+                  <div
+                    className="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                    style={{ textTransform: "uppercase" }}
+                  >
+                    <ul className="navbar-nav ml-auto pr-5 mr-5">
+                      <li className="nav-item active">
+                        <Link className="nav-link" to="/home">
+                          Home <span className="sr-only">(current)</span>
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link className="nav-link" to="/">
+                          About
+                        </Link>
+                      </li>
+
+                      <li className="nav-item dropdown">
+                        <Link
+                          className="nav-link dropdown-toggle"
+                          to="/"
+                          role="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Attraction
+                        </Link>
+                        <div className="dropdown-menu">
+                          <Link className="dropdown-item" to="/">
+                            Action
+                          </Link>
+                          <Link className="dropdown-item" to="/">
+                            Another action
+                          </Link>
+                          <div className="dropdown-divider"></div>
+                          <Link className="dropdown-item" to="/">
+                            Something else here
+                          </Link>
+                        </div>
+                      </li>
+                      <li className="nav-item dropdown">
+                        <Link
+                          className="nav-link dropdown-toggle"
+                          to="/"
+                          role="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Services
+                        </Link>
+                        <div className="dropdown-menu">
+                          <Link className="dropdown-item" to="/">
+                            Action
+                          </Link>
+                          <Link className="dropdown-item" to="/">
+                            Another action
+                          </Link>
+                          <div className="dropdown-divider"></div>
+                          <Link className="dropdown-item" to="/">
+                            Something else here
+                          </Link>
+                        </div>
+                      </li>
+
+                     
+                      <li className="nav-item">
+                        <Link className="nav-link" to="/">
+                          Our Fleets
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link className="nav-link" to="/contact">
+                          Contact
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </>
+  );
+}

@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #ffffff !important;
+  color: #555 !important;
+}
+
+.navbar a {
+  color: #555 !important;
+}
+
+.navbar-brand {
+  margin-left: 118px !important;
+}
+
+.header-main {
+  padding: 7.9px 0px !important;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.navbar-nav li {
+  margin-right: 32px !important;
+}
+.navbar-nav li a {
+  font-size: 13.4px;
+  font-weight: 400;
+}
+
+.navbar-nav{
+    padding-left: 90px!important;
+}
+

@@ -1,0 +1,98 @@
+.footer {
+  background: url("../../assets/images/singapre.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.footer .detailsoffooter {
+  text-align: left;
+  color: white;
+}
+
+.detailsoffooter h5 {
+  font-size: 43px;
+}
+
+.overlayfooter {
+  position: relative;
+}
+
+.overlayfooter::before {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.5;
+  background: #2d0101f2; /* semi-transparent overlay */
+}
+
+.enquiedetails {
+  align-items: center !important;
+  display: flex !important;
+  justify-content: right !important;
+}
+
+.enquiedetails a {
+  color: black;
+  background-color: white;
+  border-radius: 6px;
+  padding: 12px 20px;
+  text-decoration: none;
+  transition: 0.2s all;
+}
+
+.enquiedetails a:hover {
+  background-color: #1E703E;
+  transition: 0.2s all;
+  color: white;
+}
+
+.belowfooter {
+  background-color: #ececec;
+}
+
+.socialicons i {
+  font-size: 18px;
+  margin-right: 20px;
+}
+.socialicons {
+  padding-top: 50%;
+}
+.footerlogo {
+  padding-top: 16%;
+}
+
+.dotuldata {
+  text-align: left;
+}
+.dotuldata li {
+  margin-top: 12px;
+  font-size: 17px;
+}
+.dotuldata li a {
+  font-weight: 400;
+  color: white;
+}
+
+footer{
+  position: relative;
+ 
+}
+
+.attractiondetails {
+    background-color: #1E703E;
+    color: white;
+    padding: 146px 20px;
+    transform: translate(93px, -37px);
+    bottom: -34rem;
+    right: 13%;
+    z-index: 999;
+    position: absolute;
+}
+
+.attractiondetailssub {
+  border: 2px solid white;
+}
