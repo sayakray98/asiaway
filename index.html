@@ -29,6 +29,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>website</title>
+
+    <script>
+  const redirect = localStorage.getItem("redirect");
+  if (redirect) {
+    localStorage.removeItem("redirect");
+    window.history.replaceState(null, "", "/asiaway" + redirect);
+  }
+</script>
+
     <script type="module" crossorigin src="/asiaway/assets/index-CdPBr2d8.js"></script>
     <link rel="stylesheet" crossorigin href="/asiaway/assets/index-Bf9l_Bc0.css">
   </head>
