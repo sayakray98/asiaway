@@ -496,7 +496,7 @@ body {
 @media only screen and (max-width: 600px) {
   .getofferbtnmain{
     display: block!important;
-    margin-top: 50px!important;
+    margin-top: 24px!important;
   }
 
   .getofferbtn{
@@ -510,6 +510,11 @@ body {
   margin-right: 0px;
 }
 
+.getoffertext h5 {
+  color: white;
+  font-size: 17px;
+}
+
 .colimgtextmain{
   padding: 0px!important;
 }
@@ -518,5 +523,49 @@ body {
 
   font-size: 18px;
  
+}
+
+.caroheader {
+  position: absolute;
+  color: #fff !important;
+  left: 58%;
+  bottom: 18%;
+  font-weight: 700;
+  font-size: 22px;
+  background: #25252596;
+  padding: 20px !important;
+  border-radius: 8px;
+  line-height: 37px;
+}
+
+.getoffer {
+  padding: 10px 0px!important;
+}
+
+.getofferbtn a {
+  
+  padding: 4px 20px;
+ 
+}
+
+.zoom-img {
+  width: 1600px;
+  height: 197px;
+}
+
+.swiper-slide-active{
+height:197px!important;
+}
+
+.swiper-slide-prev{
+height:197px!important;
+}
+
+.swiper-slide-next{
+  height:197px!important;
+}
+
+.zoom-container {
+height:197px;
 }
 }
