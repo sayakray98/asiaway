@@ -494,78 +494,84 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .getofferbtnmain{
-    display: block!important;
-    margin-top: 24px!important;
+  .getofferbtnmain {
+    display: block !important;
+    margin-top: 24px !important;
   }
 
-  .getofferbtn{
+  .getofferbtn {
     text-align: center;
   }
 
   .colimgtext {
- 
-  width: 18rem;
- 
-  margin-right: 0px;
-}
+    width: 18rem;
 
-.getoffertext h5 {
-  color: white;
-  font-size: 17px;
-}
+    margin-right: 0px;
+  }
 
-.colimgtextmain{
-  padding: 0px!important;
-}
+  .getoffertext h5 {
+    color: white;
+    font-size: 17px;
+  }
 
-.colimgtext h5 {
+  .colimgtextmain {
+    padding: 0px !important;
+  }
 
-  font-size: 18px;
- 
-}
+  .colimgtext h5 {
+    font-size: 18px;
+  }
 
-.caroheader {
-  position: absolute;
-  color: #fff !important;
-  left: 58%;
-  bottom: 18%;
-  font-weight: 700;
-  font-size: 22px;
-  background: #25252596;
-  padding: 20px !important;
-  border-radius: 8px;
-  line-height: 37px;
-}
+  .caroheader {
+    position: absolute;
+    color: #fff !important;
+    left: 58%;
+    bottom: 18%;
+    font-weight: 700;
+    font-size: 22px;
+    background: #25252596;
+    padding: 20px !important;
+    border-radius: 8px;
+    line-height: 37px;
+  }
 
-.getoffer {
-  padding: 10px 0px!important;
-}
+  .getoffer {
+    padding: 18px 0px !important;
+  }
 
-.getofferbtn a {
-  
-  padding: 4px 20px;
- 
-}
+  .getofferbtn a {
+    padding: 4px 20px;
+  }
 
-.zoom-img {
-  width: 1600px;
-  height: 197px;
-}
+  .getofferimg {
+    position: absolute;
+    left: -9%;
+    top: -3rem;
+    z-index: 9;
+  }
 
-.swiper-slide-active{
-height:197px!important;
-}
+  .getofferimg img {
+    width: 70%;
+  }
 
-.swiper-slide-prev{
-height:197px!important;
-}
+  .zoom-img {
+    width: 1100px;
+    height: 197px;
+  }
 
-.swiper-slide-next{
-  height:197px!important;
-}
+  .swiper-slide-active {
+    height: 197px !important;
+  }
 
-.zoom-container {
-height:197px;
-}
+  .swiper-slide-prev {
+    height: 197px !important;
+  }
+
+  .swiper-slide-next {
+    height: 197px !important;
+  }
+
+  .zoom-container {
+    height: 197px;
+  }
 }
