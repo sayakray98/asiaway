@@ -493,4 +493,30 @@ body {
   background-color: #f7f9fb;
 }
 
+@media only screen and (max-width: 600px) {
+  .getofferbtnmain{
+    display: block!important;
+    margin-top: 50px!important;
+  }
 
+  .getofferbtn{
+    text-align: center;
+  }
+
+  .colimgtext {
+ 
+  width: 18rem;
+ 
+  margin-right: 0px;
+}
+
+.colimgtextmain{
+  padding: 0px!important;
+}
+
+.colimgtext h5 {
+
+  font-size: 18px;
+ 
+}
+}

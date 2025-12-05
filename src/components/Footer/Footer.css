@@ -95,3 +95,19 @@ footer {
 .attractiondetailssub {
   border: 2px solid white;
 }
+
+
+@media only screen and (max-width:600px) {
+
+  .attractiondetails {
+  background-color: #1e703e;
+  color: white;
+  padding: 146px 20px;
+  transform: translate(93px, -37px);
+  bottom: -16.2cm;
+  right: 23%;
+  z-index: 999;
+  position: absolute;
+}
+  
+}

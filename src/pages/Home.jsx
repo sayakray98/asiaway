@@ -192,7 +192,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-12 col-md-2 col-lg-5 d-flex justify-content-md-end mt-3 mt-md-0">
+            <div className="col-12 col-md-2 col-lg-5 d-flex justify-content-md-end mt-3 mt-md-0 getofferbtnmain">
               <div className="getofferbtn">
                 <a href="#">Get Offers</a>
               </div>
@@ -204,7 +204,7 @@ export default function Home() {
         <h5 className="whatwedoheading pb-4">What We Do</h5>
         <div className="container-fluid mt-4 ">
           <div className="row text-">
-            <div className="col-lg-6 pl-5">
+            <div className="col-lg-6 pl-5 colimgtextmain">
               <div className="colimgtext  ml-5">
                 <div className="overlaynew"></div>
                 <h5>YOUR VACATION</h5>
