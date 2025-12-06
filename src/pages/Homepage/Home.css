@@ -592,7 +592,7 @@ body {
     font-size: 12px;
   }
   .mainimage img {
-    height: 13.8rem;
+    height: 13.8rem!important;
   }
 
   .immain {
