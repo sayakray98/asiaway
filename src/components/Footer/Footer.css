@@ -109,5 +109,30 @@ footer {
   z-index: 999;
   position: absolute;
 }
+
+ .footerlogo
+
+ {
+    padding-top: 0%;
+}
+
+.socialicons
+
+ {
+     padding-top: 0%; 
+}
+
+.attractiondetails
+
+ {
+    background-color: #1e703e;
+    color: white;
+    padding: 61px 18px;
+    transform: translate(93px, -37px);
+    bottom: -16.2cm;
+    right: 22%;
+    z-index: 999;
+    position: absolute;
+}
   
 }

@@ -574,4 +574,42 @@ body {
   .zoom-container {
     height: 197px;
   }
+
+  .whatwedoheading::after {
+    bottom: 8px;
+  }
+
+  .whatwedoheading {
+    font-size: 25px;
+  }
+  .readbtn {
+    padding: 20px 30px;
+    font-size: 15px;
+  }
+  .readbtnf {
+    margin: 0!important;
+    padding: 20px 30px;
+    font-size: 12px;
+  }
+  .mainimage img {
+    height: 13.8rem;
+  }
+
+  .immain {
+    text-align: center!important;
+  }
+
+  .subimgeslast  {
+margin-top: 20px;
+  }
+
+  .imgsubnew{
+    margin-top: 20px;
+  }
+
+  .mainimagemain{
+    text-align: center!important;
+  }
+
+ 
 }

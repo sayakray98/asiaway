@@ -95,17 +95,17 @@ export default function Home() {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 5,
       partialVisibilityGutter: 60, // left+right preview
     },
     tablet: {
       breakpoint: { max: 1024, min: 600 },
-      items: 2,
+      items: 1,
       partialVisibilityGutter: 40,
     },
     mobile: {
       breakpoint: { max: 600, min: 0 },
-      items: 1,
+      items: 0,
       partialVisibilityGutter: 40,
     },
   };
@@ -123,7 +123,7 @@ export default function Home() {
     mobile: {
       breakpoint: { max: 600, min: 0 },
       items: 1,
-      partialVisibilityGutter: 40,
+      partialVisibilityGutter: 20,
     },
   };
   return (
@@ -211,12 +211,12 @@ export default function Home() {
               </div>
             </div>
             <div className="col-lg-6 ">
-              <h5 className="text-left">
+              <h5 className="text-left readbtn">
                 Your Vacation Pte Ltd is one of the most leading tour <br />{" "}
                 operator and destination management company that <br />
                 delivers all the travel management services in Singapore.
               </h5>
-              <p className="text-left mt-5">
+              <p className="text-left readbtnf mt-5">
                 We are also providing business to business management DMC
                 services in <br /> Singapore under the Singapore Tourism board
                 Licenses No (02848). <br /> We are supplying our all experience
@@ -238,7 +238,7 @@ export default function Home() {
         <h5 className="whatwedoheading p-3">Explore Top Attractions</h5>
         <div className="container-fluid mt-5">
           <div className="row m-0 p-0">
-            <div className="col-lg-7 text-right m-0 p-0">
+            <div className="col-lg-7 text-right m-0 p-0 ">
               <div className="mainimage">
                 <img
                   src={singapore}
@@ -248,7 +248,7 @@ export default function Home() {
                 <h5 className="headf">Gardens By The Bay</h5>
               </div>
             </div>
-            <div className="col-lg-5  text-left m-0 p-0">
+            <div className="col-lg-5  text-left m-0 p-0 immain">
               <div className="imgsub">
                 <div className="imgsubnew">
                   <img
@@ -270,7 +270,7 @@ export default function Home() {
                       <h5 className="headf">Botanic Garden</h5>
                     </div>
                   </div>
-                  <div className="col-lg-6 text-left p-0 m-0">
+                  <div className="col-lg-6 text-left p-0 m-0 mainimagemain">
                     <div className="subimgeslast">
                       <img
                         src={singaporenext3}
@@ -365,7 +365,7 @@ export default function Home() {
             <div className="col-lg-12">
               <h5 className="whatwedoheading pb-4">Attractions in Singapore</h5>
               <Carousel
-                responsive={responsive}
+                responsive={responsivenew}
                 infinite={true}
                 autoPlay={true}
                 autoPlaySpeed={2500}

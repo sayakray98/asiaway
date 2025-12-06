@@ -19,7 +19,7 @@ export default function Footer() {
                 <Link to="/contact">Enquire Now</Link>
               </div>
             </div>
-            <div className="col-lg-3 attractiondetails">
+            <div className="col-lg-3 col-6 attractiondetails">
               <div className="attractiondetailssub">
                 <h6 className="py-5 text-left pl-4 py-0">Attractions</h6>
                 <ul className="dotuldata">
