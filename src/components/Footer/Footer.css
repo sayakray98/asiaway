@@ -128,4 +128,8 @@ footer {
   .belowfootersubs{
     text-align: center!important;
   }
+
+  .paradetails {
+    padding: 0!important;
+  }
 }
