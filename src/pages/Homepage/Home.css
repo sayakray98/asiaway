@@ -525,7 +525,7 @@ body {
   .caroheader {
     position: absolute;
     color: #fff !important;
-    left: 50%!important;
+    left: 100%!important;
     bottom: 18%;
     transform: translateX(-50%)!important;
     font-weight: 700;
