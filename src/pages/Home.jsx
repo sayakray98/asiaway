@@ -148,8 +148,7 @@ export default function Home() {
                     <div className="zoom-container">
                       <img src={caro1} alt="img1" className="zoom-img" />
                       <h5 className="caroheader">
-                        Your Vacation DMC in <br />
-                        Singapore
+                       Asiaway
                       </h5>
                     </div>
                   </SwiperSlide>
@@ -167,8 +166,7 @@ export default function Home() {
                     <div className="zoom-container">
                       <img src={caro3} alt="img3" className="zoom-img" />
                       <h5 className="caroheader">
-                        Your Vacation DMC in <br />
-                        Singapore
+                       Asiaway
                       </h5>
                     </div>
                   </SwiperSlide>
