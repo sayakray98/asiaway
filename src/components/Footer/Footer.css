@@ -124,4 +124,8 @@ footer {
     padding-top: 0%!important;
     text-align: center!important;
   }
+
+  .belowfooter{
+    text-align: center!important;
+  }
 }
