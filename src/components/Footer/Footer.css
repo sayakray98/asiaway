@@ -117,19 +117,27 @@ footer {
   }
 
   .attractiondetails {
-    display: none!important;
+    display: none !important;
   }
   .footerlogo,
   .socialicons {
-    padding-top: 0%!important;
-    text-align: center!important;
+    padding-top: 0% !important;
+    text-align: center !important;
   }
 
-  .belowfootersubs{
-    text-align: center!important;
+  .belowfootersubs {
+    text-align: center !important;
   }
 
   .paradetails {
-    padding: 0!important;
+    padding: 0 !important;
+  }
+
+  .whatsappf {
+    justify-content: center;
+  }
+
+  .whatsappl {
+    justify-content: center;
   }
 }
