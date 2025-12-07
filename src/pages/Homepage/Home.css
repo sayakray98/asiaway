@@ -587,29 +587,36 @@ body {
     font-size: 15px;
   }
   .readbtnf {
-    margin: 0!important;
+    margin: 0 !important;
     padding: 20px 30px;
     font-size: 12px;
   }
   .mainimage img {
-    height: 13.8rem!important;
+    height: 13.8rem !important;
   }
 
   .immain {
-    text-align: center!important;
+    text-align: center !important;
   }
 
-  .subimgeslast  {
-margin-top: 20px;
-  }
-
-  .imgsubnew{
+  .subimgeslast {
     margin-top: 20px;
   }
 
-  .mainimagemain{
-    text-align: center!important;
+  .imgsubnew {
+    margin-top: 20px;
   }
 
- 
+  .mainimagemain {
+    text-align: center !important;
+  }
+
+  .videoiframe iframe{
+
+    height: 230px!important;
+  }
+
+  .videoiframe {
+    height: 6px;
+  }
 }

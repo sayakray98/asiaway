@@ -112,7 +112,7 @@ export default function Home() {
   const responsivenew = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 1,
+      items: 3,
       partialVisibilityGutter: 60, // left+right preview
     },
     tablet: {
@@ -370,7 +370,7 @@ export default function Home() {
                 autoPlay={true}
                 autoPlaySpeed={2500}
                 centerMode={true}
-                arrows={true}
+                arrows={false}
                 showDots={true}
                 renderDotsOutside={true}
                 itemClass="slider-card"
@@ -392,7 +392,7 @@ export default function Home() {
         <div className="container-fluid">
           <div className="row mb-5 pb-4">
             <div className="col-lg-12 pb-5 mb-5">
-              <div style={{ width: "100%", height: "450px" }}>
+              <div className="videoiframe" style={{ width: "100%", height: "450px" }}>
                 <iframe
                   width="560"
                   height="315"
