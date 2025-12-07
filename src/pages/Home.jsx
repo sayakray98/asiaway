@@ -158,8 +158,7 @@ export default function Home() {
                     <div className="zoom-container">
                       <img src={caro2} alt="img2" className="zoom-img" />
                       <h5 className="caroheader">
-                        Your Vacation DMC in <br />
-                        Singapore
+                       Asiaway
                       </h5>
                     </div>
                   </SwiperSlide>
