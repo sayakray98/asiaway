@@ -51,8 +51,9 @@ body {
 .caroheader {
   position: absolute;
   color: white !important;
-  left: 23%;
+  left: 50%;
   bottom: 40%;
+  transform: translateX(-50%);
   font-weight: bold;
   font-size: 80px;
   background: #25252596;
@@ -523,17 +524,9 @@ body {
   }
 
   .caroheader {
-    position: absolute;
-    color: #fff !important;
-    left: 50cm!important;
-    bottom: 18%;
-    
-    font-weight: 700;
+   
     font-size: 22px;
-    background: #25252596;
-    padding: 20px !important;
-    border-radius: 8px;
-    line-height: 37px;
+   
   }
 
   .getoffer {
