@@ -96,43 +96,32 @@ footer {
   border: 2px solid white;
 }
 
-
-@media only screen and (max-width:600px) {
-
+@media only screen and (max-width: 600px) {
   .attractiondetails {
-  background-color: #1e703e;
-  color: white;
-  padding: 146px 20px;
-  transform: translate(93px, -37px);
-  bottom: -16.2cm;
-  right: 23%;
-  z-index: 999;
-  position: absolute;
-}
-
- .footerlogo
-
- {
-    padding-top: 0%;
-}
-
-.socialicons
-
- {
-     padding-top: 0%; 
-}
-
-.attractiondetails
-
- {
     background-color: #1e703e;
     color: white;
-    padding: 61px 18px;
+    padding: 146px 20px;
     transform: translate(93px, -37px);
     bottom: -16.2cm;
-    right: 22%;
+    right: 23%;
     z-index: 999;
     position: absolute;
-}
-  
+  }
+
+  .footerlogo {
+    padding-top: 0%;
+  }
+
+  .socialicons {
+    padding-top: 0%;
+  }
+
+  .attractiondetails {
+    display: none;
+  }
+  .footerlogo,
+  .socialicons {
+    padding-top: 0%;
+    text-align: center;
+  }
 }
