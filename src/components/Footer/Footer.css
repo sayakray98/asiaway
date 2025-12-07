@@ -117,11 +117,11 @@ footer {
   }
 
   .attractiondetails {
-    display: none;
+    display: none!important;
   }
   .footerlogo,
   .socialicons {
-    padding-top: 0%;
-    text-align: center;
+    padding-top: 0%!important;
+    text-align: center!important;
   }
 }
