@@ -63,7 +63,7 @@ export default function Footer() {
                 <i class="fa-brands fa-instagram"></i>
               </div>
             </div>
-            <div className="col-lg-9 text-justify">
+            <div className="col-lg-9 belowfootersubs text-justify">
               <div className="paradetails pr-5 mt-4">
                 <p style={{ fontWeight: "400" }}>
                   Your Vacation Pte Ltd is one of the most leading tour operator
@@ -74,16 +74,16 @@ export default function Footer() {
                 </p>
               </div>
             </div>
-            <div className="col-lg-8 text-left py-2" style={{"borderTop" : "1px solid black", "borderBottom" : "1px solid black"}}>
+            <div className="col-lg-8 belowfootersubs text-left py-2" style={{"borderTop" : "1px solid black", "borderBottom" : "1px solid black"}}>
               <div className="row">
-                <div className="col-lg-4 d-flex align-items-center">
+                <div className="col-lg-4 belowfootersubs d-flex align-items-center">
                   <i class="fa-solid fa-location-crosshairs"></i> &nbsp; &nbsp;
                   <p>
                     101 Kitchener Road, Jalan Besar Plaza #03-44, Singapore
                     -208511
                   </p>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4belowfootersubs ">
                   <div className="whatsappf d-flex">
                     <i class="fa-brands fa-whatsapp pt-1"></i>{" "}
                     <p>+65 92725871</p>
@@ -94,7 +94,7 @@ export default function Footer() {
                     <p>+65 65898640</p>
                   </div>
                 </div>
-                <div className="col-lg-4 text-left">
+                <div className="col-lg-4 belowfootersubs text-left">
                   <div className="emailf d-flex">
                     <i class="fa-brands fa-whatsapp pt-1"></i>{" "}
                     <p>+65 92725871</p>
@@ -107,7 +107,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-8 text-left mt-3">
+            <div className="col-lg-8 belowfootersubs text-left mt-3">
                 <h6>Copyrights © All Rights Reserved by YOUR VACATION PTE LTD</h6>
             </div>
           </div>
