@@ -10,11 +10,11 @@
     height: 200cm;
   }
 
-  .menumobile{
-    overflow-y: hidden!important;
+  .menumobile {
+    overflow-y: hidden !important;
   }
-  .menumobile::-webkit-scrollbar{
-    display: none!important;
+  .menumobile::-webkit-scrollbar {
+    display: none !important;
   }
 
   .navbar-navnew {
@@ -33,10 +33,15 @@
   }
 
   .fa-xmark {
-    padding: 28px 0px;
+    border: 2px solid #1e703e;
+    padding: 8px 12px;
+    margin-top: 20px;
+    width: 10%;
+    color: #1e703e;
   }
 
   .navbar-navnew {
+    margin-top: 8px;
     padding: 0 !important;
   }
 }
