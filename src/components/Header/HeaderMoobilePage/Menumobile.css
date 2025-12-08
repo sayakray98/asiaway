@@ -1,0 +1,35 @@
+@media only screen and (max-width: 600px) {
+  .menumobile {
+    position: fixed;
+    background: black;
+    z-index: 9999999;
+    width: 100%;
+    top: 0;
+    color: white;
+    left: 0;
+    height: 200cm;
+  }
+
+  .navbar-navnew {
+    text-align: left;
+  }
+
+  .navbar-navnew li {
+    list-style: none;
+    font-style: italic;
+  }
+
+  .navbar-navnew li a {
+    color: white !important;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .fa-xmark {
+    padding: 28px 0px;
+  }
+
+  .navbar-navnew {
+    padding: 0 !important;
+  }
+}

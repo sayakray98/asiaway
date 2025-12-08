@@ -31,13 +31,12 @@
     <title>website</title>
 
     <script>
-  const redirect = localStorage.getItem("redirect");
-  if (redirect) {
-    localStorage.removeItem("redirect");
-    window.history.replaceState(null, "", "/asiaway" + redirect);
-  }
-</script>
-
+      const redirect = localStorage.getItem("redirect");
+      if (redirect) {
+        localStorage.removeItem("redirect");
+        window.history.replaceState(null, "", "/asiaway" + redirect);
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

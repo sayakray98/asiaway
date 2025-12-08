@@ -33,15 +33,13 @@ import user1 from "../assets/images/img-1.jpg";
 import ourteam from "../assets/images/9dc25624-5e22-4dc8-885b-20c5e5c61a23-1086x1536.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Link } from "react-router-dom";
 import {
   EffectCoverflow,
   Pagination,
   Navigation,
   Autoplay,
 } from "swiper/modules";
-
-
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -126,9 +124,12 @@ export default function Home() {
       partialVisibilityGutter: 20,
     },
   };
+
+  
   return (
     <>
-      <Header />
+      <Header  />
+
 
       <section className="homeCarosel">
         <div className="container-fluid m-0 p-0 ">
@@ -147,27 +148,21 @@ export default function Home() {
                   <SwiperSlide>
                     <div className="zoom-container">
                       <img src={caro1} alt="img1" className="zoom-img" />
-                      <h5 className="caroheader">
-                       Asiaway
-                      </h5>
+                      <h5 className="caroheader">Asiaway</h5>
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
                     <div className="zoom-container">
                       <img src={caro2} alt="img2" className="zoom-img" />
-                      <h5 className="caroheader">
-                       Asiaway
-                      </h5>
+                      <h5 className="caroheader">Asiaway</h5>
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
                     <div className="zoom-container">
                       <img src={caro3} alt="img3" className="zoom-img" />
-                      <h5 className="caroheader">
-                       Asiaway
-                      </h5>
+                      <h5 className="caroheader">Asiaway</h5>
                     </div>
                   </SwiperSlide>
                 </Swiper>
@@ -389,7 +384,10 @@ export default function Home() {
         <div className="container-fluid">
           <div className="row mb-5 pb-4">
             <div className="col-lg-12 pb-5 mb-5">
-              <div className="videoiframe" style={{ width: "100%", height: "450px" }}>
+              <div
+                className="videoiframe"
+                style={{ width: "100%", height: "450px" }}
+              >
                 <iframe
                   width="560"
                   height="315"

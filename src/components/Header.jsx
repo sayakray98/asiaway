@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext} from "react";
 import logo from "../assets/images/logowhite.png";
 import "./Header/Header.css";
 import { Link } from "react-router-dom";
+import MenuContext from "../context/MenuContext";
+
 
 export default function Header() {
+  const { onToggleMenu } = useContext(MenuContext);
+ 
   return (
     <>
       <div className="header-main"></div>
@@ -30,6 +34,7 @@ export default function Header() {
                 <div className="navdetails">
                   <button
                     className="navbar-toggler"
+                    onClick={onToggleMenu}
                     type="button"
                     data-toggle="collapse"
                     data-target="#navbarSupportedContent"

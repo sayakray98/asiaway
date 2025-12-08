@@ -524,9 +524,7 @@ body {
   }
 
   .caroheader {
-   
     font-size: 22px;
-   
   }
 
   .getoffer {
@@ -605,12 +603,13 @@ body {
     text-align: center !important;
   }
 
-  .videoiframe iframe{
-
-    height: 230px!important;
+  .videoiframe iframe {
+    height: 230px !important;
   }
 
   .videoiframe {
-    height: 6px!important;
+    height: 6px !important;
   }
+
+ 
 }

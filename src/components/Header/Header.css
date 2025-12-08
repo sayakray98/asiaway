@@ -74,4 +74,10 @@
   .header-main{
     display: none;
   }
+  .navbar-nav{
+    display: none;
+  }
+  button:hover{
+    border-color:0px!important;
+  }
 }
