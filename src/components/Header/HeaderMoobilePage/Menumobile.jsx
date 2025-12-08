@@ -19,12 +19,12 @@ export default function Mobilemenu() {
               
               <ul className="navbar-navnew ml-auto pr-5 mr-5">
                 <li className="nav-item active">
-                  <Link className="nav-link" to="/home">
+                  <Link className="nav-link" to="/home" onClick={onToggleMenu}>
                     Home <span className="sr-only">(current)</span>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/">
+                  <Link className="nav-link" to="/" onClick={onToggleMenu}>
                     About
                   </Link>
                 </li>
@@ -82,7 +82,7 @@ export default function Mobilemenu() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/contact">
+                  <Link className="nav-link" to="/contact" onClick={onToggleMenu}>
                     Contact
                   </Link>
                 </li>
