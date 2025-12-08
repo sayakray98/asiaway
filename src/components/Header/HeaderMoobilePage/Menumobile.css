@@ -11,7 +11,10 @@
   }
 
   .menumobile{
-    overflow-y: hidden;
+    overflow-y: hidden!important;
+  }
+  .menumobile::-webkit-scrollbar{
+    display: none!important;
   }
 
   .navbar-navnew {
