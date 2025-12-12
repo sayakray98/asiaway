@@ -10,11 +10,26 @@ export default function Contact() {
       <Header />
       <section className="contact text-left">
         <div className="container">
-        <h6 className="d-flex pb-2">  <Link to="/home" style={{"color" : "#1E703E", "text-decoration" : "underline"}}> Home </Link>&nbsp; / Contact</h6>
+          <h6 className="d-flex pb-2">
+            {" "}
+            <Link
+              to="/home"
+              style={{ color: "#1E703E", "text-decoration": "underline" }}
+            >
+              {" "}
+              Home{" "}
+            </Link>
+            &nbsp; / Contact
+          </h6>
           <div className="row">
             <div className="col-lg-8 m-0 p-0">
               <div className="contactForm">
-               <form action="https://docs.google.com/forms/u/0/d/1oZaD_62mspRIW_5oPSOMffLokVx9fsygfCt_awNyz98/previewResponse" method="POST" target="_blank">
+                <form
+                  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfIkvCWvV_y9sb96U-TzL6rXeFlWKDemwKs_ynsVlmDd11lZA/formResponse?edit2=2_ABaOnucqaZbetmwXBtYy85EK-psvzU1hHjU78jPy9FsKR9k4vki-QAK3ZXtqkKcXQQ
+"
+                  method="POST"
+               
+                >
                   {/* First Name and Last Name Row */}
                   <div className="row mb-3">
                     <div className="col-md-6">
@@ -24,10 +39,8 @@ export default function Contact() {
                       <input
                         type="text"
                         id="fname"
-                        name="YPqjbf"
+                        name="entry.2005620554"
                         className="form-control"
-                       
-                      
                       />
                     </div>
                     <div className="col-md-6">
@@ -39,7 +52,6 @@ export default function Contact() {
                         id="lname"
                         name="lname"
                         className="form-control"
-                       
                       />
                     </div>
                   </div>
@@ -53,9 +65,8 @@ export default function Contact() {
                       <input
                         type="email"
                         id="email"
-                        name="email"
+                        name="entry.1045781291"
                         className="form-control"
-                       
                         required
                       />
                       <small className="text-danger">This is required.</small>
@@ -69,7 +80,6 @@ export default function Contact() {
                         id="phone"
                         name="phone"
                         className="form-control"
-                       
                       />
                     </div>
                   </div>
@@ -94,7 +104,7 @@ export default function Contact() {
                     </label>
                     <textarea
                       id="message"
-                      name="message"
+                      name="entry.1065046570"
                       rows="5"
                       className="form-control"
                       placeholder="Say hello"
@@ -109,9 +119,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="col-lg-4 m-0 p-0 colimages">
-                <div className="colimage">
-
-                </div>
+              <div className="colimage"></div>
             </div>
           </div>
         </div>
