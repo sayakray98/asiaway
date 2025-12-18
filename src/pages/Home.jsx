@@ -174,7 +174,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="whatwedo  p-3">
+      <section className="whatwedo p-3 pt-5 mt-2">
         <h5 className="whatwedoheading pb-4">What AsiaWay Holiday Does</h5>
         <div className="container-fluid mt-4 ">
           <div className="row text-">
@@ -211,7 +211,7 @@ export default function Home() {
       </section>
 
       <section className="explore pb-5">
-        <h5 className="whatwedoheading p-3">Explore Top Attractions</h5>
+        <h5 className="whatwedoheading p-3 my-3 py-3">Explore Top Attractions</h5>
         <div className="container-fluid mt-5">
           <div className="row m-0 p-0">
             <div className="col-lg-7 text-right m-0 p-0 ">
