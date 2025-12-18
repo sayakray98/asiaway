@@ -52,7 +52,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-lg-6 text-left">
               <div className="footerlogo">
-                <img src={logo} alt="" width={"56%"} />
+                <img src={logo} alt="" width={"52%"} />
               </div>
             </div>
             <div className="col-lg-3 text-right">
