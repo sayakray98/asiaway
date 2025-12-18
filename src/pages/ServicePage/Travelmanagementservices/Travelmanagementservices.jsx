@@ -12,8 +12,7 @@ export default function Travelmanagementservices() {
       <Header />
       <section className="travelmanagementservices">
         <div className="container mainsection p-5">
-          <div className="row">
-            <h6 className="d-flex pb-2">
+                      <h6 className="d-flex pb-2">
             {" "}
             <Link
               to="/home"
@@ -24,6 +23,8 @@ export default function Travelmanagementservices() {
             </Link>
             &nbsp; / Travel Management Services
           </h6>
+          <div className="row">
+
             <div className="col-lg-6">
               <div className="travelmanagementservicescontent text-left">
                 <h5 style={{ fontSize: "28px" }}>
