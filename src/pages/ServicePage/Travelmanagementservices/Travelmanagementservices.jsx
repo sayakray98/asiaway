@@ -4,6 +4,7 @@ import image_01 from "../../../assets/images/Night Safari.jpeg";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import "./Travelmanagementservices.css";
+import { Link } from "react-router-dom";
 
 export default function Travelmanagementservices() {
   return (
@@ -12,6 +13,17 @@ export default function Travelmanagementservices() {
       <section className="travelmanagementservices">
         <div className="container mainsection p-5">
           <div className="row">
+            <h6 className="d-flex pb-2">
+            {" "}
+            <Link
+              to="/home"
+              style={{ color: "#1E703E", "text-decoration": "underline" }}
+            >
+              {" "}
+              Home{" "}
+            </Link>
+            &nbsp; / Travel Management Services
+          </h6>
             <div className="col-lg-6">
               <div className="travelmanagementservicescontent text-left">
                 <h5 style={{ fontSize: "28px" }}>
