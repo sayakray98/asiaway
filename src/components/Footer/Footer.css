@@ -90,6 +90,7 @@ footer {
   right: 13%;
   z-index: 999;
   position: absolute;
+  border:2px solid white
 }
 
 .attractiondetailssub {
