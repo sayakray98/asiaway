@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/react.svg"; // or remove if unused
 import "./App.css";
+import "../src/styles/global.css";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
