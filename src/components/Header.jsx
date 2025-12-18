@@ -1,13 +1,13 @@
-import React, { useContext} from "react";
+import React, { useContext, useState } from "react";
 import logo from "../assets/images/logowhite.png";
 import "./Header/Header.css";
 import { Link } from "react-router-dom";
 import MenuContext from "../context/MenuContext";
 
-
 export default function Header() {
   const { onToggleMenu } = useContext(MenuContext);
- 
+  const [openDropdown, setOpenDropdown] = useState(null);
+
   return (
     <>
       <div className="header-main"></div>
@@ -65,50 +65,57 @@ export default function Header() {
                         </Link>
                       </li>
 
-                      <li className="nav-item dropdown">
+                      <li className={`nav-item dropdown ${
+                        openDropdown === "attraction" ? "show" : ""
+                      }`}
+                      onMouseEnter={() => setOpenDropdown("attraction")}
+                     >
                         <Link
                           className="nav-link dropdown-toggle"
-                          to="/"
+                          to="#"
                           role="button"
                           data-toggle="dropdown"
                           aria-expanded="false"
+                        
                         >
                           Attraction
                         </Link>
-                        <div className="dropdown-menu">
+                        <div  className={`dropdown-menu ${
+                          openDropdown === "attraction" ? "show" : ""
+                        }`}>
                           <Link className="dropdown-item" to="/">
                             Action
                           </Link>
                           <Link className="dropdown-item" to="/">
                             Another action
                           </Link>
-                          <div className="dropdown-divider"></div>
+                          
                           <Link className="dropdown-item" to="/">
                             Something else here
                           </Link>
                         </div>
                       </li>
-                      <li className="nav-item dropdown">
+                      <li className={`nav-item dropdown ${
+                        openDropdown === "services" ? "show" : ""
+                      }`}
+                      onMouseEnter={() => setOpenDropdown("services")}
+                     >
                         <Link
                           className="nav-link dropdown-toggle"
-                          to="/"
-                          role="button"
+                          to="#"
                           data-toggle="dropdown"
                           aria-expanded="false"
+                          onMouseEnter={onmouseenter}
                         >
                           Services
                         </Link>
-                        <div className="dropdown-menu">
-                          <Link className="dropdown-item" to="/">
-                            Action
+                        <div className={`dropdown-menu ${
+                          openDropdown === "services" ? "show" : ""
+                        }`}>
+                          <Link className="dropdown-item" to="/travelmanagementservices">
+                            Travel Management Services
                           </Link>
-                          <Link className="dropdown-item" to="/">
-                            Another action
-                          </Link>
-                          <div className="dropdown-divider"></div>
-                          <Link className="dropdown-item" to="/">
-                            Something else here
-                          </Link>
+                       
                         </div>
                       </li>
 

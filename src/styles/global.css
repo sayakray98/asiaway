@@ -27,4 +27,22 @@ h5 {
 .dotuldata li{
     list-style: none!important;
 }
+i{
+    color: black!important;
+}
 
+.whatwedoheading {
+  position: relative;
+  font-size: 43px;
+}
+
+.whatwedoheading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  width: 10%;
+  height: 1.2px;
+  bottom: 5px;
+}

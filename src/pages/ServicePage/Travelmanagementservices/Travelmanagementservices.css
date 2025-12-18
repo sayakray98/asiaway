@@ -1,0 +1,70 @@
+.btn{
+    background-color: #1E703E;;
+}
+
+.travelmanagementservicescontent .btn a, i{
+    color: white;
+}
+.travelmanagementservicescontent .btn i{
+    color: white!important;
+}
+
+.mainsection{
+    background: #FAFAFA;
+    border-radius: 20px;
+}
+
+.mainsection .travelmanagementservicescontent img{
+
+    border-radius: 10px;
+    
+}
+
+.colimagelist li{
+   
+    margin-top: 4px;
+}
+
+.colimgtextlist{
+    background-color: #1E703E;
+    padding: 25px 30px;
+    border-radius: 12px;
+}
+.colimgtextlist>h5 {
+    color: rgb(255, 255, 255);
+}
+.colimagelist>li {
+    color: rgb(255, 255, 255);
+}
+
+.colimagelist {
+  position: relative;
+ 
+}
+
+.colimagelist::before {
+  content: "";
+  position: absolute;
+  top: -89px;
+  left: 50%; /* adjust horizontal position */
+  width: 0;
+  transform: translateX(-50%);
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #1E703E;
+}
+
+.dotted{
+    position: relative;
+}
+.dotted::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 50%; /* adjust horizontal position */
+  width: 100%;
+  transform: translateX(-50%);
+  height: 2px;
+  border: 2px dotted #1E703E;
+}
