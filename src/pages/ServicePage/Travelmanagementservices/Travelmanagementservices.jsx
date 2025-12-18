@@ -11,21 +11,20 @@ export default function Travelmanagementservices() {
     <>
       <Header />
       <section className="travelmanagementservices">
-                       <h6 className="d-flex pb-2">
+   
+        <div className="container mt-5 ">
+               <h6 className="d-flex pb-2">
+          {" "}
+          <Link
+            to="/home"
+            style={{ color: "#1E703E", "text-decoration": "underline" }}
+          >
             {" "}
-            <Link
-              to="/home"
-              style={{ color: "#1E703E", "text-decoration": "underline" }}
-            >
-              {" "}
-              Home{" "}
-            </Link>
-            &nbsp; / Travel Management Services
-          </h6>
-        <div className="container mainsection p-5">
-       
-          <div className="row">
-
+            Home{" "}
+          </Link>
+          &nbsp; / Travel Management Services
+        </h6>
+          <div className="row mainsection p-5 mt-4">
             <div className="col-lg-6">
               <div className="travelmanagementservicescontent text-left">
                 <h5 style={{ fontSize: "28px" }}>
