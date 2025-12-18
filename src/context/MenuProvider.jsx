@@ -3,11 +3,9 @@ import MenuContext from "./MenuContext";
 
 export default function MenuProvider({ children }) {
   const [showMenu, setShowMenu] = useState(false);
- const onToggleMenu = () => {
-  
-  setShowMenu(prev => !prev);
-};
-
+  const onToggleMenu = () => {
+    setShowMenu((prev) => !prev);
+  };
 
   return (
     <MenuContext.Provider value={{ showMenu, onToggleMenu }}>

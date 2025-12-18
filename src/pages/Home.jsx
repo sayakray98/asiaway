@@ -125,11 +125,9 @@ export default function Home() {
     },
   };
 
-  
   return (
     <>
-      <Header  />
-
+      <Header />
 
       <section className="homeCarosel">
         <div className="container-fluid m-0 p-0 ">
@@ -193,7 +191,7 @@ export default function Home() {
         </div>
       </section>
       <section className="whatwedo  p-3">
-        <h5 className="whatwedoheading pb-4">What We Do</h5>
+        <h5 className="whatwedoheading pb-4">What AsiaWay Holiday Does</h5>
         <div className="container-fluid mt-4 ">
           <div className="row text-">
             <div className="col-lg-6 pl-5 colimgtextmain">
@@ -204,19 +202,21 @@ export default function Home() {
             </div>
             <div className="col-lg-6 ">
               <h5 className="text-left readbtn">
-                Your Vacation Pte Ltd is one of the most leading tour <br />{" "}
-                operator and destination management company that <br />
-                delivers all the travel management services in Singapore.
+                AsiaWay Holiday is a destination management company providing
+                seamless and comprehensive travel management services in
+                Singapore through established on-ground partnerships. Backed by
+                strong local tie-ups and deep destination knowledge, we ensure
+                smooth coordination and reliable execution at every stage of the
+                journey.
               </h5>
               <p className="text-left readbtnf mt-5">
-                We are also providing business to business management DMC
-                services in <br /> Singapore under the Singapore Tourism board
-                Licenses No (02848). <br /> We are supplying our all experience
-                to agencies, corporations, organizations <br /> and
-                associations. If anybody want to explore the Singapore at any
-                extent then <br /> you should go with Your Vacation Pte Ltd as
-                we are the most trust-able and <br /> professionals with taking
-                your all the safety measures.
+                We offer end-to-end travel management solutions including
+                customized itinerary planning, hotel and accommodation
+                arrangements, ground transportation, sightseeing experiences,
+                MICE services, visa assistance, and complete on-ground support
+                in Singapore. Our experienced team manages every detail with
+                precision, enabling our B2B partners and clients to deliver
+                hassle-free, memorable travel experiences.
               </p>
             </div>
             <a className="readmore " href="/">
@@ -279,9 +279,7 @@ export default function Home() {
         </div>
       </section>
       <section className="dmc">
-        <h5 className="whatwedoheading p-3">
-          DMC in Singapore (Why Choose Us)
-        </h5>
+        <h5 className="whatwedoheading p-3">Why AsiaWay Holiday?</h5>
         <div className="container mt-4">
           <div className="row">
             <div className="col-lg-4">
@@ -289,9 +287,11 @@ export default function Home() {
                 <i class="fa-solid fa-money-check-dollar"></i>
                 <h5 className="p-2">Effecctive Cost</h5>
                 <p>
-                  We mainly deals into B2B, So it will be beneficial for you to
-                  work in B2B rates which nobody can provide you in the market
-                  for Singapore DMC.
+                  Dedicated B2B Support & Competitive Pricing : Our experienced
+                  team delivers prompt responses and transparent pricing by
+                  sourcing rates directly from trusted on-ground partners in
+                  Singapore, ensuring excellent value for our B2B travel
+                  partners.
                 </p>
               </div>
             </div>
@@ -300,9 +300,10 @@ export default function Home() {
                 <i class="fa-solid fa-toolbox"></i>
                 <h5 className="p-2">Experienced</h5>
                 <p>
-                  We have a great graph with our clients in B2B traveling in
-                  Singapore for DMC. We also understands our clients which makes
-                  us different from others.
+                  2. End-to-End Travel Management Expertise : our Backed by over
+                  10 years of Singapore tour management expertise, our founder
+                  and core team ensure smooth coordination and end-to-end
+                  execution for a hassle-free travel experience.
                 </p>
               </div>
             </div>
