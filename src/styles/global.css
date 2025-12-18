@@ -20,4 +20,11 @@ h5 {
 .readbtn{
     font-family: 'Jost', sans-serif!important;
 }
+.dotuldata{
+    padding-left: 20px!important;
+}
+
+.dotuldata li{
+    list-style: none!important;
+}
 
