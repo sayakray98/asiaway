@@ -47,7 +47,7 @@ export default function Fleets() {
                 </button>
               </div>
             </div>
-            <div className="col-lg-12 col-12" style={{borderTop: "2px dotted #1d7625ff", paddingTop: "60px"}}>
+            <div className="col-lg-12 col-12" style={{borderTop: "4px dotted #1d7625ff", paddingTop: "60px"}}>
               <div className="firstcolfleets">
                 <h5 className="carsdetails">Audi</h5>
 
@@ -64,7 +64,7 @@ export default function Fleets() {
                 <img src={fleet_02} alt="" />
               </div>
             </div>
-            <div className="col-lg-12 col-12" style={{borderTop: "2px dotted #1d7625ff", paddingTop: "60px"}}>
+            <div className="col-lg-12 col-12" style={{borderTop: "4px dotted #1d7625ff", paddingTop: "60px"}}>
               <div className="firstcolfleets">
                 <img src={fleet_03} alt="" />
               </div>
@@ -81,7 +81,7 @@ export default function Fleets() {
                 </button>
               </div>
             </div>
-            <div className="col-lg-12 col-12" style={{borderTop: "2px dotted #1d7625ff", paddingTop: "60px"}}>
+            <div className="col-lg-12 col-12" style={{borderTop: "4px dotted #1d7625ff", paddingTop: "60px"}}>
               <div className="firstcolfleets">
                 <h5 className="carsdetails">Toyota Coaster- 20 seater</h5>
 
@@ -98,7 +98,7 @@ export default function Fleets() {
                 <img src={fleet_04} alt="" />
               </div>
             </div>
-            <div className="col-lg-12 col-12" style={{borderTop: "2px dotted #1d7625ff", paddingTop: "60px"}}>
+            <div className="col-lg-12 col-12" style={{borderTop: "4px dotted #1d7625ff", paddingTop: "60px"}}>
               <div className="firstcolfleets">
                 <img src={fleet_05} alt="" />
               </div>
