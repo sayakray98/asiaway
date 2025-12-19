@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="col-lg-7">
               <div className="detailsoffooter">
                 <p>TRAVEL WITH US</p>
-                <h5>YOUR VACATION PTE LTD</h5>
+                <h5>ASIAWAY HOLIDAY</h5>
               </div>
             </div>
             <div className="col-lg-5">
@@ -66,7 +66,7 @@ export default function Footer() {
             <div className="col-lg-9 belowfootersubs text-justify">
               <div className="paradetails pr-5 mt-4">
                 <p style={{ fontWeight: "400" }}>
-                  Your Vacation Pte Ltd is one of the most leading tour operator
+                  ASIAWAY HOLIDAY is one of the most leading tour operator
                   and destination management company that delivers all the
                   travel management services in Singapore. We are also providing
                   business to business management DMC services in Singapore
@@ -74,16 +74,16 @@ export default function Footer() {
                 </p>
               </div>
             </div>
-            <div className="col-lg-8 belowfootersubs text-left py-2" style={{"borderTop" : "1px solid black", "borderBottom" : "1px solid black"}}>
+            <div className="col-lg-8 belowfootersubs  text-left py-2" style={{"borderTop" : "1px solid black", "borderBottom" : "1px solid black"}}>
               <div className="row">
-                <div className="col-lg-4 col-12 pt-2 belowfootersubs d-flex align-items-center">
+                <div className="col-lg-4 col-12 pt-2 belowfootersubs  d-flex align-items-center">
                   <i class="fa-solid fa-location-crosshairs"></i> &nbsp; &nbsp;
                   <p>
                     101 Kitchener Road, Jalan Besar Plaza #03-44, Singapore
                     -208511
                   </p>
                 </div>
-                <div className="col-lg-4 col-12 pt-2 belowfootersubs ">
+                <div className="col-lg-4 col-12 pt-2 belowfootersubs belowfootersubslinks">
                   <div className="whatsappf d-flex">
                     <i class="fa-brands fa-whatsapp pt-1"></i>{" "}
                     <p>+65 92725871</p>
@@ -108,7 +108,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="col-lg-8 belowfootersubs text-left mt-3">
-                <h6>Copyrights © All Rights Reserved by YOUR VACATION PTE LTD</h6>
+                <h6>Copyrights © All Rights Reserved by ASIAWAY HOLIDAY</h6>
             </div>
           </div>
         </div>

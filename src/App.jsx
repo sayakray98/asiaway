@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact/Contact";
 import Mobilemenu from "./components/Header/HeaderMoobilePage/Menumobile";
+import Fleets from "./pages/Fleets/Fleets";
 import Travelmanagementservices from "./pages/ServicePage/Travelmanagementservices/Travelmanagementservices";
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/travelmanagementservices" element={<Travelmanagementservices />} />
+        <Route path="/fleets" element={<Fleets />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Mobilemenu />

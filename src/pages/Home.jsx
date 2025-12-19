@@ -130,21 +130,21 @@ export default function Home() {
                   <SwiperSlide>
                     <div className="zoom-container">
                       <img src={caro1} alt="img1" className="zoom-img" />
-                      <h5 className="caroheader">Asiaway</h5>
+                      <h5 className="caroheader">Asiaway Holiday</h5>
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
                     <div className="zoom-container">
                       <img src={caro2} alt="img2" className="zoom-img" />
-                      <h5 className="caroheader">Asiaway</h5>
+                      <h5 className="caroheader">Asiaway Holiday</h5>
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
                     <div className="zoom-container">
                       <img src={caro3} alt="img3" className="zoom-img" />
-                      <h5 className="caroheader">Asiaway</h5>
+                      <h5 className="caroheader">Asiaway Holiday</h5>
                     </div>
                   </SwiperSlide>
                 </Swiper>
@@ -181,7 +181,7 @@ export default function Home() {
             <div className="col-lg-6 pl-5 colimgtextmain">
               <div className="colimgtext  ml-5">
                 <div className="overlaynew"></div>
-                <h5>YOUR VACATION</h5>
+                <h5>ASIAWAY HOLIDAY</h5>
               </div>
             </div>
             <div className="col-lg-6 ">

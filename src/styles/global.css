@@ -1,34 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 h5 {
-  font-family: 'Aclonica', sans-serif;
+  font-family: "Aclonica", sans-serif;
 }
 
-.colimgtext h5{
-    font-family: 'Aclonica', sans-serif;
+.colimgtext h5 {
+  font-family: "Aclonica", sans-serif;
 }
 
-.readbtn{
-    font-family: 'Jost', sans-serif!important;
+.readbtn {
+  font-family: "Jost", sans-serif !important;
 }
-.dotuldata{
-    padding-left: 20px!important;
+.dotuldata {
+  padding-left: 20px !important;
 }
 
-.dotuldata li{
-    list-style: none!important;
+.dotuldata li {
+  list-style: none !important;
 }
-i{
-    color: black!important;
+i {
+  color: black !important;
 }
 
 .whatwedoheading {
@@ -45,4 +44,8 @@ i{
   width: 10%;
   height: 1.2px;
   bottom: 5px;
+}
+
+header {
+  box-shadow: 0px 8px 18px -1px #e2e2e2 !important;
 }
