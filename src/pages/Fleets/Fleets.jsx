@@ -42,7 +42,7 @@ export default function Fleets() {
                 </p>
 
                 <button className="btn">
-                  <a href="">Book Now</a>
+                  <a href="/contact">Book Now</a>
                   <i className="fas fa-chevron-right"></i>
                 </button>
               </div>
@@ -56,7 +56,7 @@ export default function Fleets() {
                 </p>
 
                 <button className="btn">
-                  <a href="">Book Now</a>
+                  <a href="/contact">Book Now</a>
                   <i className="fas fa-chevron-right"></i>
                 </button>
               </div>
@@ -76,7 +76,7 @@ export default function Fleets() {
                 </p>
 
                 <button className="btn">
-                  <a href="">Book Now</a>
+                  <a href="/contact">Book Now</a>
                   <i className="fas fa-chevron-right"></i>
                 </button>
               </div>
@@ -90,7 +90,7 @@ export default function Fleets() {
                Group Tours – Coaches and larger vehicles for leisure groups and MICE tours, commonly including 23-seater Toyota Coaster or 44-seater coaches.  </p>
 
                 <button className="btn">
-                  <a href="">Book Now</a>
+                  <a href="/contact">Book Now</a>
                   <i className="fas fa-chevron-right"></i>
                 </button>
               </div>
@@ -110,7 +110,7 @@ export default function Fleets() {
                 </p>
 
                 <button className="btn">
-                  <a href="">Book Now</a>
+                  <a href="/contact">Book Now</a>
                   <i className="fas fa-chevron-right"></i>
                 </button>
               </div>
