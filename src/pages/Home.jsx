@@ -130,21 +130,21 @@ export default function Home() {
                   <SwiperSlide>
                     <div className="zoom-container">
                       <img src={caro1} alt="img1" className="zoom-img" />
-                      <h5 className="caroheader">Asiaway Holiday</h5>
+                      <h5 className="caroheader">Asiaway Holidays</h5>
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
                     <div className="zoom-container">
                       <img src={caro2} alt="img2" className="zoom-img" />
-                      <h5 className="caroheader">Asiaway Holiday</h5>
+                      <h5 className="caroheader">Asiaway Holidays</h5>
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
                     <div className="zoom-container">
                       <img src={caro3} alt="img3" className="zoom-img" />
-                      <h5 className="caroheader">Asiaway Holiday</h5>
+                      <h5 className="caroheader">Asiaway Holidays</h5>
                     </div>
                   </SwiperSlide>
                 </Swiper>
@@ -175,18 +175,18 @@ export default function Home() {
         </div>
       </section>
       <section className="whatwedo p-3 pt-5 mt-2">
-        <h5 className="whatwedoheading pb-4">What AsiaWay Holiday Does</h5>
+        <h5 className="whatwedoheading pb-4">What Asiaway Holidays Does</h5>
         <div className="container-fluid mt-4 ">
           <div className="row text-">
             <div className="col-lg-6 pl-5 colimgtextmain">
               <div className="colimgtext  ml-5">
                 <div className="overlaynew"></div>
-                <h5>ASIAWAY HOLIDAY</h5>
+                <h5>Asiaway Holidays</h5>
               </div>
             </div>
             <div className="col-lg-6 ">
               <h5 className="text-left readbtn">
-                AsiaWay Holiday is a destination management company providing
+                Asiaway Holidays is a destination management company providing
                 seamless and comprehensive travel management services in
                 Singapore through established on-ground partnerships. Backed by
                 strong local tie-ups and deep destination knowledge, we ensure
@@ -263,7 +263,7 @@ export default function Home() {
         </div>
       </section>
       <section className="dmc">
-        <h5 className="whatwedoheading p-3">Why AsiaWay Holiday?</h5>
+        <h5 className="whatwedoheading p-3">Why Asiaway Holidays?</h5>
         <div className="container mt-4">
           <div className="row">
             <div className="col-lg-4">
@@ -355,7 +355,8 @@ export default function Home() {
               >
                 {sliderData.map((item, i) => (
                   <div className="gallery-card" key={i}>
-                    <img src={item.img} alt={item.title} />
+                    <a href="/blog"> <img src={item.img} alt={item.title} /></a>
+                   
                     <p className="gallery-title">{item.title}</p>
                   </div>
                 ))}

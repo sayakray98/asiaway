@@ -64,6 +64,11 @@ export default function Header() {
                           About
                         </Link>
                       </li>
+                      <li className="nav-item">
+                        <Link className="nav-link" to="/blog">
+                          Blogs
+                        </Link>
+                      </li>
 
                       <li className={`nav-item dropdown ${
                         openDropdown === "attraction" ? "show" : ""

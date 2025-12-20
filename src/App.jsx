@@ -10,7 +10,7 @@ import Contact from "./pages/Contact/Contact";
 import Mobilemenu from "./components/Header/HeaderMoobilePage/Menumobile";
 import Fleets from "./pages/Fleets/Fleets";
 import Travelmanagementservices from "./pages/ServicePage/Travelmanagementservices/Travelmanagementservices";
-
+import Blogs from "./Blog/Blogs";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/travelmanagementservices" element={<Travelmanagementservices />} />
         <Route path="/fleets" element={<Fleets />} />
+        <Route path="/blog" element={<Blogs />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Mobilemenu />

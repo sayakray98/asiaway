@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="col-lg-7">
               <div className="detailsoffooter">
                 <p>TRAVEL WITH US</p>
-                <h5>ASIAWAY HOLIDAY</h5>
+                <h5>ASIAWAY HOLIDAYS</h5>
               </div>
             </div>
             <div className="col-lg-5">
@@ -66,7 +66,7 @@ export default function Footer() {
             <div className="col-lg-9 belowfootersubs text-justify">
               <div className="paradetails pr-5 mt-4">
                 <p style={{ fontWeight: "400" }}>
-                  ASIAWAY HOLIDAY is one of the most leading tour operator
+                  ASIAWAY HOLIDAYS is one of the most leading tour operator
                   and destination management company that delivers all the
                   travel management services in Singapore. We are also providing
                   business to business management DMC services in Singapore
@@ -108,7 +108,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="col-lg-8 belowfootersubs text-left mt-3">
-                <h6>Copyrights © All Rights Reserved by ASIAWAY HOLIDAY</h6>
+                <h6>Copyrights © All Rights Reserved by ASIAWAY HOLIDAYS</h6>
             </div>
           </div>
         </div>
