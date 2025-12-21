@@ -66,21 +66,27 @@ export default function Footer() {
             <div className="col-lg-9 belowfootersubs text-justify">
               <div className="paradetails pr-5 mt-4">
                 <p style={{ fontWeight: "400" }}>
-                  ASIAWAY HOLIDAYS is one of the most leading tour operator
-                  and destination management company that delivers all the
-                  travel management services in Singapore. We are also providing
+                  ASIAWAY HOLIDAYS is one of the most leading tour operator and
+                  destination management company that delivers all the travel
+                  management services in Singapore. We are also providing
                   business to business management DMC services in Singapore
                   under the Singapore Tourism board Licenses No (02848).
                 </p>
               </div>
             </div>
-            <div className="col-lg-8 belowfootersubs  text-left py-2" style={{"borderTop" : "1px solid black", "borderBottom" : "1px solid black"}}>
+            <div
+              className="col-lg-8 belowfootersubs  text-left py-2"
+              style={{
+                borderTop: "1px solid black",
+                borderBottom: "1px solid black",
+              }}
+            >
               <div className="row">
                 <div className="col-lg-4 col-12 pt-2 belowfootersubs  d-flex align-items-center">
                   <i class="fa-solid fa-location-crosshairs"></i> &nbsp; &nbsp;
                   <p>
-                    101 Kitchener Road, Jalan Besar Plaza #03-44, Singapore
-                    -208511
+                    302, Galaxy Apartment, RZ-2001/B Gali No. 24, Tughlakabad
+                    Extension New Delhi - 110019 India
                   </p>
                 </div>
                 <div className="col-lg-4 col-12 pt-2 belowfootersubs belowfootersubslinks">
@@ -108,7 +114,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="col-lg-8 belowfootersubs text-left mt-3">
-                <h6>Copyrights © All Rights Reserved by ASIAWAY HOLIDAYS</h6>
+              <h6>Copyrights © All Rights Reserved by ASIAWAY HOLIDAYS</h6>
             </div>
           </div>
         </div>
