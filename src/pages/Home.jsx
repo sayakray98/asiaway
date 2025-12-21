@@ -319,37 +319,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <section className="fantastic overlay p-2">
-        <h5 className="whatwedoheadingnew pb-4 pt-5">FANTASTIC FACTS</h5>
-        <div className="container p-5">
-          <div className="row">
-            <div className="col-lg-3">
-              <div className="counters">
-                <h5>{count}</h5>
-                <p>Satisfied Customers</p>
-              </div>
-            </div>
-            <div className="col-lg-3">
-              <div className="counters">
-                <h5>{count}</h5>
-                <p>Registered Companies</p>
-              </div>
-            </div>
-            <div className="col-lg-3">
-              <div className="counters">
-                <h5>{count}</h5>
-                <p>Contracts</p>
-              </div>
-            </div>
-            <div className="col-lg-3">
-              <div className="counters">
-                <h5>{count}</h5>
-                <p>AWARDS WON</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
+   
       <section className="gallery-section p-5">
         <div className="container">
           <div className="row">
@@ -369,7 +339,7 @@ export default function Home() {
               >
                 {sliderData.map((item, i) => (
                   <div className="gallery-card" key={i}>
-                    <a href="/asiaway/blog">
+                    <a href="/blog">
                       {" "}
                       <img src={item.img} alt={item.title} />
                     </a>

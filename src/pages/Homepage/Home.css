@@ -112,7 +112,7 @@ body {
   height: 700px;
   object-fit: cover;
 
-  /* Zoom animation */
+
   animation: zoomEffect 6s ease-in-out infinite;
 }
 
@@ -265,10 +265,6 @@ body {
   transition: 0.4s all;
 }
 
-/* Swiper wrapper fix (optional if overflow issue occurs) */
-/* .swiper-wrapper {
-  overflow: hidden !important;
-} */
 
 .getoffer {
   background-color: #1e703e;
