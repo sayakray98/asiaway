@@ -355,7 +355,7 @@ export default function Home() {
               >
                 {sliderData.map((item, i) => (
                   <div className="gallery-card" key={i}>
-                    <a href="/blog"> <img src={item.img} alt={item.title} /></a>
+                    <a href="/asiaway/blog"> <img src={item.img} alt={item.title} /></a>
                    
                     <p className="gallery-title">{item.title}</p>
                   </div>
