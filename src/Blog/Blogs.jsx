@@ -84,9 +84,7 @@ export default function Blogs() {
     <>
       <Header />
       <section id="blog" className="section-padding pb-5">
-
         <div className="container container-custom">
-
           <h6 className="d-flex pb-2 mt-5">
             {" "}
             <Link
@@ -100,8 +98,9 @@ export default function Blogs() {
           </h6>
           {/* HEADER */}
           <div className="blog-header">
-           
-            <h5 className="whatwedoheading p-3 my-3 py-3">Latest from Our Blog</h5>
+            <h5 className="whatwedoheading p-3 my-3 py-3">
+              Latest from Our Blog
+            </h5>
             <p>
               Inspiring stories, travel tips, and insider guides from our team
               of passionate travelers.
@@ -129,7 +128,9 @@ export default function Blogs() {
               <div className="featured-content text-left">
                 <span className="featured-badge">Featured</span>
 
-                <h5 className="text-left" style={{fontSize : "30px"}}>{featuredPost.title}</h5>
+                <h5 className="text-left" style={{ fontSize: "30px" }}>
+                  {featuredPost.title}
+                </h5>
                 <p>{featuredPost.excerpt}</p>
 
                 <div className="featured-footer">
