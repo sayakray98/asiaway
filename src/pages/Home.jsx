@@ -67,6 +67,21 @@ export default function Home() {
   //   },
   // ];
 
+  const responsivecaro = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   const sliderData = [
     { img: slide_image_1, title: "Night Safari" },
     { img: slide_image_2, title: "Jurong bird park" },
@@ -114,40 +129,37 @@ export default function Home() {
       <Header />
 
       <section className="homeCarosel">
-        <div className="container-fluid m-0 p-0 ">
+        <div className="container-fluid m-0 p-0">
           <div className="row m-0 p-0">
             <div className="col-lg-12 p-0 m-0">
               <div className="home-demo">
-                <Swiper
-                  modules={[Navigation, Pagination, Autoplay]}
-                  slidesPerView={1}
-                  spaceBetween={10}
-                  navigation={false}
-                  pagination={false}
-                  loop={true}
-                  autoplay={true}
+                <Carousel
+                  responsive={responsivecaro}
+                  infinite={true}
+                  autoPlay={true}
+                  autoPlaySpeed={3000}
+                  arrows={false}
+                  showDots={false}
+                  pauseOnHover={false}
+                  swipeable={true}
+                  draggable={true}
+                  keyBoardControl={true}
                 >
-                  <SwiperSlide>
-                    <div className="zoom-container">
-                      <img src={caro1} alt="img1" className="zoom-img" />
-                      <h5 className="caroheader">Asiaway Holidays</h5>
-                    </div>
-                  </SwiperSlide>
+                  <div className="zoom-container">
+                    <img src={caro1} alt="img1" className="zoom-img" />
+                    <h5 className="caroheader">Asiaway Holidays</h5>
+                  </div>
 
-                  <SwiperSlide>
-                    <div className="zoom-container">
-                      <img src={caro2} alt="img2" className="zoom-img" />
-                      <h5 className="caroheader">Asiaway Holidays</h5>
-                    </div>
-                  </SwiperSlide>
+                  <div className="zoom-container">
+                    <img src={caro2} alt="img2" className="zoom-img" />
+                    <h5 className="caroheader">Asiaway Holidays</h5>
+                  </div>
 
-                  <SwiperSlide>
-                    <div className="zoom-container">
-                      <img src={caro3} alt="img3" className="zoom-img" />
-                      <h5 className="caroheader">Asiaway Holidays</h5>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
+                  <div className="zoom-container">
+                    <img src={caro3} alt="img3" className="zoom-img" />
+                    <h5 className="caroheader">Asiaway Holidays</h5>
+                  </div>
+                </Carousel>
               </div>
             </div>
           </div>
@@ -211,7 +223,9 @@ export default function Home() {
       </section>
 
       <section className="explore pb-5">
-        <h5 className="whatwedoheading p-3 my-3 py-3">Explore Top Attractions</h5>
+        <h5 className="whatwedoheading p-3 my-3 py-3">
+          Explore Top Attractions
+        </h5>
         <div className="container-fluid mt-5">
           <div className="row m-0 p-0">
             <div className="col-lg-7 text-right m-0 p-0 ">
@@ -355,8 +369,11 @@ export default function Home() {
               >
                 {sliderData.map((item, i) => (
                   <div className="gallery-card" key={i}>
-                    <a href="/asiaway/blog"> <img src={item.img} alt={item.title} /></a>
-                   
+                    <a href="/asiaway/blog">
+                      {" "}
+                      <img src={item.img} alt={item.title} />
+                    </a>
+
                     <p className="gallery-title">{item.title}</p>
                   </div>
                 ))}
