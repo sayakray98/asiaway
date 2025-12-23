@@ -65,12 +65,14 @@ export default function Footer() {
                 <div className="col-lg-6 col-12 pt-2 belowfootersubs text-left">
                   <div className="emailf d-flex">
                     <i class="fa-brands fa-whatsapp pt-1"></i>{" "}
-                    <p>+65 92725871</p>
+                    <p>
+                     <a href="mailto:admin@asiawayholidays.com">admin@asiawayholidays.com </a> 
+                    </p>
                   </div>
 
                   <div className="emaill d-flex">
                     <i class="fa-brands fa-whatsapp pt-1"></i>{" "}
-                    <p>+65 65898640</p>
+                    <p><a href="mailto:support@asiawayholidays.com">support@asiawayholidays.com</a></p>
                   </div>
                 </div>
               </div>
