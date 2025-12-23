@@ -6,7 +6,7 @@ import MenuContext from "../context/MenuContext";
 
 export default function Header() {
   const { onToggleMenu } = useContext(MenuContext);
-  const [openDropdown, setOpenDropdown] = useState(null);
+
 
   return (
     <>
@@ -71,34 +71,9 @@ export default function Header() {
                       </li>
 
                       <li className="nav-item">
-                        <Link className="nav-link" to="#">
-                          Attraction
-                        </Link>
-                      </li>
-
-
-                      <li className={`nav-item dropdown ${
-                        openDropdown === "services" ? "show" : ""
-                      }`}
-                      onMouseEnter={() => setOpenDropdown("services")}
-                     >
-                        <Link
-                          className="nav-link dropdown-toggle"
-                          to="#"
-                          data-toggle="dropdown"
-                          aria-expanded="false"
-                          onMouseEnter={onmouseenter}
-                        >
+                        <Link className="nav-link" to="/services">
                           Services
                         </Link>
-                        <div className={`dropdown-menu ${
-                          openDropdown === "services" ? "show" : ""
-                        }`}>
-                          <Link className="dropdown-item" to="/travelmanagementservices">
-                            Travel Management Services
-                          </Link>
-                       
-                        </div>
                       </li>
 
                       <li className="nav-item">

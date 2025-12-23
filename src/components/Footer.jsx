@@ -68,9 +68,7 @@ export default function Footer() {
                 <p style={{ fontWeight: "400" }}>
                   ASIAWAY HOLIDAYS is one of the most leading tour operator and
                   destination management company that delivers all the travel
-                  management services in Singapore. We are also providing
-                  business to business management DMC services in Singapore
-                  under the Singapore Tourism board Licenses No (02848).
+                  management services in Singapore.
                 </p>
               </div>
             </div>
