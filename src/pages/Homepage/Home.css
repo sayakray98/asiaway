@@ -107,9 +107,9 @@ body {
   height: 700px;
 }
 
-video{
+iframe > video{
   width: 1300px!important;
-  object-fit: cover!important;
+  
 }
 
 .zoom-img {
