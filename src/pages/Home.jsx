@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Footer from "../components/Footer";
-import caro1 from "../assets/images/caro1.jpg";
+import caro1 from "../assets/images/RiverWonder.jpg";
 import caro2 from "../assets/images/caro2.jpg";
 import caro3 from "../assets/images/caro3.jpg";
 import bg from "../assets/images/bg.png";
@@ -15,6 +15,7 @@ import slide_image_2 from "../assets/images/S.E.A Aquarium.jpg";
 import slide_image_3 from "../assets/images/Sri Veeramakaliamman Temple.jpg";
 import slide_image_4 from "../assets/images/buddha-tooth-relic-temple.jpg";
 import slide_image_5 from "../assets/images/Changi Airport.jpg";
+import video from "../assets/images/WhatsApp Video 2025-12-21 at 9.46.27 PM.mp4";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
@@ -83,11 +84,11 @@ export default function Home() {
   };
 
   const sliderData = [
-    { img: slide_image_1, title: "Night Safari" },
-    { img: slide_image_2, title: "Jurong bird park" },
-    { img: slide_image_3, title: "Singapore Zoo" },
-    { img: slide_image_4, title: "Marina bay sands" },
-    { img: slide_image_5, title: "Sentosa Island Singapore" },
+    { img: slide_image_1, title: "Merlion Statue" },
+    { img: slide_image_2, title: "S.E.A Aquarium" },
+    { img: slide_image_3, title: "SriVeeramakaliamman Temple" },
+    { img: slide_image_4, title: "Buddha Tooth Relic Temple" },
+    { img: slide_image_5, title: "Changi Airport" },
   ];
   const responsive = {
     desktop: {
@@ -364,7 +365,7 @@ export default function Home() {
                 <iframe
                   width="560"
                   height="315"
-                  src="https://www.youtube.com/embed/T3KYywFTpY0?autoplay=1&mute=1&loop=1&playlist=T3KYywFTpY0&controls=0&modestbranding=1&showinfo=0&rel=0"
+                  src={video}
                   title="YouTube video player"
                   frameBorder="0"
                   allow="autoplay; encrypted-media"
