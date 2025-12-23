@@ -105,7 +105,7 @@ body {
 
 .bg-video {
   width: 95vw;
-  height: 97vh;
+  height: 90vh;
   object-fit: cover;
   transform: translateX(-2px);
   border: 21px solid black;
