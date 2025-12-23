@@ -19,31 +19,6 @@ export default function Footer() {
                 <Link to="/contact">Enquire Now</Link>
               </div>
             </div>
-            <div className="col-lg-3 col-6 attractiondetails">
-              <div className="attractiondetailssub">
-                <h6 className="py-5 text-left pl-4 py-0">Attractions</h6>
-                <ul className="dotuldata">
-                  <li>
-                    <a href="">Singapore Zoo</a>
-                  </li>
-                  <li>
-                    <a href="">Sentosa Island</a>
-                  </li>
-                  <li>
-                    <a href="">Night Safari</a>
-                  </li>
-                  <li>
-                    <a href="">Marina Bay Sands Skypark</a>
-                  </li>
-                  <li>
-                    <a href="">Marina Bay Sands Skypark</a>
-                  </li>
-                  <li>
-                    <a href="">Jurong Bird Park</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </footer>
@@ -55,7 +30,7 @@ export default function Footer() {
                 <img src={logo} alt="" width={"52%"} />
               </div>
             </div>
-            <div className="col-lg-3 text-right">
+            <div className="col-lg-6 text-right">
               <div className="socialicons">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-whatsapp"></i>
@@ -63,8 +38,8 @@ export default function Footer() {
                 <i class="fa-brands fa-instagram"></i>
               </div>
             </div>
-            <div className="col-lg-9 belowfootersubs text-justify">
-              <div className="paradetails pr-5 mt-4">
+            <div className="col-lg-12 belowfootersubs text-justify">
+              <div className="paradetails pr-5 mt-2">
                 <p style={{ fontWeight: "400" }}>
                   ASIAWAY HOLIDAYS is one of the most leading tour operator and
                   destination management company that delivers all the travel
@@ -73,32 +48,21 @@ export default function Footer() {
               </div>
             </div>
             <div
-              className="col-lg-8 belowfootersubs  text-left py-2"
+              className="col-lg-12 belowfootersubs  text-left py-2"
               style={{
                 borderTop: "1px solid black",
                 borderBottom: "1px solid black",
               }}
             >
               <div className="row">
-                <div className="col-lg-4 col-12 pt-2 belowfootersubs  d-flex align-items-center">
+                <div className="col-lg-6 col-12 pt-2 belowfootersubs  d-flex align-items-center">
                   <i class="fa-solid fa-location-crosshairs"></i> &nbsp; &nbsp;
                   <p>
                     302, Galaxy Apartment, RZ-2001/B Gali No. 24, Tughlakabad
                     Extension New Delhi - 110019 India
                   </p>
                 </div>
-                <div className="col-lg-4 col-12 pt-2 belowfootersubs belowfootersubslinks">
-                  <div className="whatsappf d-flex">
-                    <i class="fa-brands fa-whatsapp pt-1"></i>{" "}
-                    <p>+65 92725871</p>
-                  </div>
-
-                  <div className="whatsappl d-flex">
-                    <i class="fa-brands fa-whatsapp pt-1"></i>{" "}
-                    <p>+65 65898640</p>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-12 pt-2 belowfootersubs text-left">
+                <div className="col-lg-6 col-12 pt-2 belowfootersubs text-left">
                   <div className="emailf d-flex">
                     <i class="fa-brands fa-whatsapp pt-1"></i>{" "}
                     <p>+65 92725871</p>
