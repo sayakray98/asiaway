@@ -354,7 +354,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="video py-5 my-5">
+      <section className="video py-5">
         <div className="container-fluid">
           <div className="row mb-5 pb-4">
             <div className="col-lg-12 pb-5 mb-5">
