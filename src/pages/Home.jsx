@@ -340,7 +340,7 @@ export default function Home() {
               >
                 {sliderData.map((item, i) => (
                   <div className="gallery-card" key={i}>
-                    <a href="/blog">
+                    <a href="https://sayakray98.github.io/asiaway/blog">
                       {" "}
                       <img src={item.img} alt={item.title} />
                     </a>
