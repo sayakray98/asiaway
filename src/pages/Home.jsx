@@ -320,7 +320,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-   
+
       <section className="gallery-section p-5">
         <div className="container">
           <div className="row">
@@ -362,19 +362,14 @@ export default function Home() {
                 className="videoiframe"
                 style={{ width: "100%", height: "450px" }}
               >
-                <iframe
-                  width="560"
-                  height="315"
+                <video
                   src={video}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                  style={{
-                    width: "100%",
-                    height: "700px",
-                  }}
-                ></iframe>
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="bg-video"
+                ></video>
               </div>
             </div>
           </div>

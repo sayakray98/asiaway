@@ -107,10 +107,16 @@ body {
   height: 700px;
 }
 
-iframe > video{
-  width: 1300px!important;
-  
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
 }
+
 
 .zoom-img {
   width: 100%;
