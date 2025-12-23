@@ -1,10 +1,7 @@
-
-
 body {
   margin: 0;
   padding: 0;
 }
-
 
 /* Slow auto zoom on active slide */
 .swiper-slide-active .zoom-img {
@@ -99,7 +96,6 @@ body {
   width: 100%;
 }
 
-
 .zoom-container {
   position: relative;
   overflow: hidden;
@@ -108,19 +104,17 @@ body {
 }
 
 .bg-video {
-  
-  width: 100vw;
-  height: 100vh;
+  width: 95vw;
+  height: 140vh;
   object-fit: cover;
- 
+  transform: translateX(-2px);
+  border: 21px solid black;
 }
-
 
 .zoom-img {
   width: 100%;
   height: 700px;
   object-fit: cover;
-
 
   animation: zoomEffect 6s ease-in-out infinite;
 }
@@ -133,8 +127,6 @@ body {
     transform: scale(1.15);
   }
 }
-
-
 
 .whatwedoheading {
   position: relative;
@@ -273,7 +265,6 @@ body {
 
   transition: 0.4s all;
 }
-
 
 .getoffer {
   background-color: #1e703e;
@@ -630,6 +621,4 @@ body {
   .videoiframe {
     height: 6px !important;
   }
-
- 
 }
