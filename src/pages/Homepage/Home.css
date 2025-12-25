@@ -535,7 +535,9 @@ body {
   }
 
   .caroheader {
-    font-size: 22px;
+    font-size: 15px;
+    bottom: 20%;
+    padding: 1px 6px !important;
   }
 
   .getoffer {
@@ -552,6 +554,27 @@ body {
     top: -3rem;
     z-index: 9;
   }
+
+  .bg-video {
+    width: 95vw;
+    height: 21vh;
+    object-fit: cover;
+    transform: translateX(-2px);
+    border: 21px solid black;
+}
+
+.detailsoffooter{
+  text-align: center !important;
+}
+
+
+
+.enquiedetails {
+  margin-top: 30px;
+    align-items: center !important;
+    display: flex !important;
+    justify-content: center !important;
+}
 
   .getofferimg img {
     width: 70%;

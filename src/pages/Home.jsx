@@ -198,14 +198,14 @@ export default function Home() {
               </div>
             </div>
             <div className="col-lg-6 ">
-              <h5 className="text-left readbtn">
+              <p className="text-left readbtn">
                 Asiaway Holiday is a destination management company providing
                 seamless and comprehensive travel management services in
                 Singapore through established on-ground partnerships. Backed by
                 strong local tie-ups and deep destination knowledge, we ensure
                 smooth coordination and reliable execution at every stage of the
                 journey.
-              </h5>
+              </p>
               <p className="text-left readbtnf mt-5">
                 We offer end-to-end travel management solutions including
                 customized itinerary planning, hotel and accommodation
@@ -236,7 +236,7 @@ export default function Home() {
                   alt=""
                   style={{ width: "89%", height: "28.8rem" }}
                 />
-                <h5 className="headf">Gardens By The Bay</h5>
+                <h5 className="headf">Singapore Flyer</h5>
               </div>
             </div>
             <div className="col-lg-5  text-left m-0 p-0 immain">
@@ -247,7 +247,7 @@ export default function Home() {
                     alt=""
                     style={{ width: "85%", height: "255px" }}
                   />
-                  <h5 className="headfnew">Sentosa</h5>
+                  <h5 className="headfnew">Singapore Flyer Capsule</h5>
                 </div>
 
                 <div className="row m-0 p-0 mt-4 pt-2">
@@ -258,7 +258,7 @@ export default function Home() {
                         alt=""
                         style={{ width: "94%", height: "10.69rem" }}
                       />
-                      <h5 className="headf">Botanic Garden</h5>
+                      <h5 className="headf">River Wonder</h5>
                     </div>
                   </div>
                   <div className="col-lg-6 text-left p-0 m-0 mainimagemain">
@@ -268,7 +268,7 @@ export default function Home() {
                         alt=""
                         style={{ width: "87%", height: "10.69rem" }}
                       />
-                      <h5 className="headf">Marine Bay Sands</h5>
+                      <h5 className="headf">Bird Paradise</h5>
                     </div>
                   </div>
                 </div>
@@ -281,7 +281,7 @@ export default function Home() {
         <h5 className="whatwedoheading p-3">Why Asiaway Holiday?</h5>
         <div className="container mt-4">
           <div className="row">
-            <div className="col-lg-4">
+            <div className="col-lg-6 col-12">
               <div className="subcolumns">
                 <i class="fa-solid fa-money-check-dollar"></i>
                 <h5 className="p-2">Effecctive Cost</h5>
@@ -294,19 +294,19 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-6 col-12">
               <div className="subcolumns">
                 <i class="fa-solid fa-toolbox"></i>
-                <h5 className="p-2">Experienced</h5>
+                <h5 className="p-2">Experience</h5>
                 <p>
-                  2. End-to-End Travel Management Expertise : our Backed by over
+                   End-to-End Travel Management Expertise : our Backed by over
                   10 years of Singapore tour management expertise, our founder
                   and core team ensure smooth coordination and end-to-end
                   execution for a hassle-free travel experience.
                 </p>
               </div>
             </div>
-            <div className="col-lg-4">
+            {/* <div className="col-lg-4">
               <div className="subcolumns">
                 <i class="fa-solid fa-shield"></i>
                 <h5 className="p-2">Safety & Security</h5>
@@ -316,7 +316,7 @@ export default function Home() {
                   you all security measures.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
