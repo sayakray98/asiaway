@@ -576,6 +576,16 @@ body {
     justify-content: center !important;
 }
 
+
+
+.gallery-title {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+}
+
+
   .getofferimg img {
     width: 70%;
   }
