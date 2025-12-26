@@ -19,7 +19,6 @@ i {
 }
 .databtnsub .btn i {
   color: white !important;
-      
 }
 
 .mainsection {
@@ -44,14 +43,12 @@ i {
   color: rgb(255, 255, 255);
 }
 .colimgtextlist ol li {
-    color: white;
+  color: white;
 }
-
 
 .colimgtextlist {
   position: relative;
 }
-
 
 .colimgtextlist::before {
   content: "";
@@ -65,8 +62,6 @@ i {
   border-right: 8px solid transparent;
   border-bottom: 8px solid #1e703e;
 }
-
-
 
 .dotted {
   position: relative;
@@ -112,9 +107,38 @@ i {
 }
 
 .secondcol .btn {
-    margin-top: 55px!important;
-        border-radius: 40px;
+  margin-top: 55px !important;
+  border-radius: 40px;
 }
 .secondcol .btn i {
-      font-size: 14px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  .firstcol,
+  .secondcol {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin: 20px 0px;
+  }
+
+  .travelmanagementservicescontent {
+    margin-top: 15px;
+  }
+
+  .dotted::after
+  {
+    width: 0%;
+    height: 0%;
+   border: none;
+  }
+
+  .colimgtextlist {
+    margin-top: 15px;
+  }
+
+  .colimgtextlist::before {
+    border: none;
+  }
 }

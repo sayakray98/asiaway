@@ -64,15 +64,21 @@ export default function Footer() {
                 </div>
                 <div className="col-lg-6 col-12 pt-2 belowfootersubs text-left">
                   <div className="emailf d-flex">
-                    <i class="fa-brands fa-whatsapp pt-1"></i>{" "}
+                    <i class="fa-regular fa-envelope"></i>{" "}
                     <p>
-                     <a href="mailto:admin@asiawayholidays.com">admin@asiawayholidays.com </a> 
+                      <a href="mailto:admin@asiawayholidays.com">
+                       &nbsp;  admin@asiawayholidays.com{" "}
+                      </a>
                     </p>
                   </div>
 
                   <div className="emaill d-flex">
-                    <i class="fa-brands fa-whatsapp pt-1"></i>{" "}
-                    <p><a href="mailto:support@asiawayholidays.com">support@asiawayholidays.com</a></p>
+                    <i class="fa-regular fa-envelope"></i>{" "}
+                    <p>
+                      <a href="mailto:b2bsales@asiawayholiday.com">
+                      &nbsp;    b2bsales@asiawayholiday.com
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>

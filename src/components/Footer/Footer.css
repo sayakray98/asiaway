@@ -100,6 +100,18 @@ footer {
 .belowfootersubs p {
   font-weight: 600;
 }
+.belowfootersubs .emailf p {
+  margin: 0;
+}
+.belowfootersubs .emaill p {
+   margin: 0;  
+}
+.belowfootersubs .emailf a {
+  color: black;
+}
+.belowfootersubs .emaill a {
+   color: black;
+}
 
 .attractiondetailssub {
   border: 2px solid white;

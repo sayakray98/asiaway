@@ -32,13 +32,14 @@ export default function Fleets() {
           <div className="row mainsectionfleets p-5 mt-4">
             <div className="col-lg-12 col-12" >
               <div className="firstcolfleets">
-                <img src={fleet_01} alt="" />
+                <img src={fleet_05} alt="" />
               </div>
               <div className="secondcolfleets">
-                <h5 className="carsdetails">44 seater AC Coach</h5>
+                <h5 className="carsdetails">Toyota Hiace</h5>
 
                 <p>
                   Private Tours – Dedicated sedan vehicles for FITs, families, customized itineraries, and airport pick-ups and drop-offs.
+                  
                 </p>
 
                 <button className="btn">
@@ -100,13 +101,13 @@ export default function Fleets() {
             </div>
             <div className="col-lg-12 col-12" style={{borderTop: "4px dotted #1d7625ff", paddingTop: "60px"}}>
               <div className="firstcolfleets">
-                <img src={fleet_05} alt="" />
+                <img src={fleet_01} alt="" />
               </div>
               <div className="secondcolfleets">
-                <h5 className="carsdetails">Toyota Hiace</h5>
+                <h5 className="carsdetails">44 seater AC Coach</h5>
 
                 <p>
-                   Private Tours – Dedicated sedan vehicles for FITs, families, customized itineraries, and airport pick-ups and drop-offs.
+                   Private Tours - Dedicated sedan vehicles for FITs, families, customized itineraries, and airport pick-ups and drop-offs.
                 </p>
 
                 <button className="btn">

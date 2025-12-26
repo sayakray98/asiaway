@@ -70,3 +70,16 @@ button.btn a{
 .secondcolfleets .btn i {
   font-size: 14px;
 }
+
+@media only screen and (max-width: 600px) {
+
+  .firstcolfleets, .secondcolfleets {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin: 20px 0px;
+  }
+
+
+
+}
