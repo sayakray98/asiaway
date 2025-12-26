@@ -63,7 +63,7 @@ export default function Footer() {
                   </p>
                 </div>
                 <div className="col-lg-6 col-12 pt-2 belowfootersubs text-left">
-                  <div className="emailf d-flex">
+                  <div className="emailf d-flex align-items-center">
                     <i class="fa-regular fa-envelope"></i>{" "}
                     <p>
                       <a href="mailto:admin@asiawayholidays.com">
@@ -72,7 +72,7 @@ export default function Footer() {
                     </p>
                   </div>
 
-                  <div className="emaill d-flex">
+                  <div className="emaill d-flex align-items-center">
                     <i class="fa-regular fa-envelope"></i>{" "}
                     <p>
                       <a href="mailto:b2bsales@asiawayholiday.com">
