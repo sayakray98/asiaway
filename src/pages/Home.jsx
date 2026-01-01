@@ -150,7 +150,7 @@ export default function Home() {
     },
     {
       img: batu_cave_kilim,
-      title: "Batu Caves & Kilim Geo Forest Park",
+      title: "Bat Cave, Kilim Geo Forest Park, Langkawi",
       alt: "Malaysia Batu Caves Kilim Geo Forest Park Langkawi",
     },
     {

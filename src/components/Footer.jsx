@@ -60,8 +60,8 @@ export default function Footer() {
                     <i class="fa-solid fa-location-crosshairs"></i> &nbsp;
                     &nbsp;
                     <p>
-                     India Correspondent Office : 302, Galaxy Apartment, RZ-2001/B Gali No. 24, Tughlakabad
-                      Extension New Delhi - 110019 India
+                      India Office : 302, Galaxy Apartment, RZ-2001/B Gali No.
+                      24, Tughlakabad Extension New Delhi - 110019 India
                     </p>
                   </div>
                   <br />
@@ -75,13 +75,14 @@ export default function Footer() {
                   </div>
                   <br />
                   <div className="subscategory d-flex align-items-center">
-    <i class="fa-solid fa-location-crosshairs"></i> &nbsp; &nbsp;
-                  <p>
-                    Malaysia Correspondent Office : Wisma Koponas, 74-2ND Floor
-                    Jalan Tun Sambanthan 50470, Kuala Lumpur
-                  </p>{" "}
+                    <i class="fa-solid fa-location-crosshairs"></i> &nbsp;
+                    &nbsp;
+                    <p>
+                      Malaysia Correspondent Office : Wisma Koponas, 74-2ND
+                      Floor Jalan Tun Sambanthan 50470, Kuala Lumpur
+                    </p>{" "}
                   </div>
-              
+
                   <br />
                 </div>
                 <div className="col-lg-6 col-12 pt-2 belowfootersubs text-left">
