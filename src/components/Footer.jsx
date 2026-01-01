@@ -41,9 +41,9 @@ export default function Footer() {
             <div className="col-lg-12 belowfootersubs text-justify">
               <div className="paradetails pr-5 mt-2">
                 <p style={{ fontWeight: "400" }}>
-                  ASIAWAY HOLIDAYS is one of the leading tour operator and
-                  destination management company that delivers all the travel
-                  management services in Singapore & Malaysia.
+                  ASIAWAY HOLIDAYS is a leading tour operator and destination
+                  management company providing end-to-end travel management
+                  services in Singapore and Malaysia.
                 </p>
               </div>
             </div>
@@ -98,8 +98,8 @@ export default function Footer() {
                   <div className="emaill d-flex align-items-center">
                     <i class="fa-regular fa-envelope"></i>{" "}
                     <p>
-                      <a href="mailto:b2bsales@asiawayholiday.com">
-                        &nbsp; b2bsales@asiawayholiday.com
+                      <a href="mailto:b2bsales@asiawayholidays.com">
+                        &nbsp; b2bsales@asiawayholidays.com
                       </a>
                     </p>
                   </div>
