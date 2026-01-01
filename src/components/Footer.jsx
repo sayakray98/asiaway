@@ -1,6 +1,6 @@
 import React from "react";
 import "../components/Footer/Footer.css";
-import logo from "../assets/images/logowhite.png";
+import logo from "../assets/images/logowhit.png";
 import { Link } from "react-router-dom";
 export default function Footer() {
   return (
@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="col-lg-7">
               <div className="detailsoffooter">
                 <p>TRAVEL WITH US</p>
-                <h5>ASIAWAY HOLIDAY</h5>
+                <h5>ASIAWAY HOLIDAYS</h5>
               </div>
             </div>
             <div className="col-lg-5">
@@ -41,9 +41,9 @@ export default function Footer() {
             <div className="col-lg-12 belowfootersubs text-justify">
               <div className="paradetails pr-5 mt-2">
                 <p style={{ fontWeight: "400" }}>
-                  ASIAWAY HOLIDAY is one of the most leading tour operator and
+                  ASIAWAY HOLIDAYS is one of the leading tour operator and
                   destination management company that delivers all the travel
-                  management services in Singapore.
+                  management services in Singapore & Malaysia.
                 </p>
               </div>
             </div>
@@ -55,19 +55,41 @@ export default function Footer() {
               }}
             >
               <div className="row">
-                <div className="col-lg-6 col-12 pt-2 belowfootersubs  d-flex align-items-center">
-                  <i class="fa-solid fa-location-crosshairs"></i> &nbsp; &nbsp;
+                <div className="col-lg-6 col-12 pt-2 belowfootersubs">
+                  <div className="subscategory d-flex align-items-center">
+                    <i class="fa-solid fa-location-crosshairs"></i> &nbsp;
+                    &nbsp;
+                    <p>
+                     India Correspondent Office : 302, Galaxy Apartment, RZ-2001/B Gali No. 24, Tughlakabad
+                      Extension New Delhi - 110019 India
+                    </p>
+                  </div>
+                  <br />
+                  <div className="subscategory d-flex align-items-center">
+                    <i class="fa-solid fa-location-crosshairs"></i> &nbsp;
+                    &nbsp;
+                    <p>
+                      Singapore Correspondent Office : 260A Sengkang East
+                      Way,#06-486, Postal , Singapore 541260
+                    </p>
+                  </div>
+                  <br />
+                  <div className="subscategory d-flex align-items-center">
+    <i class="fa-solid fa-location-crosshairs"></i> &nbsp; &nbsp;
                   <p>
-                    302, Galaxy Apartment, RZ-2001/B Gali No. 24, Tughlakabad
-                    Extension New Delhi - 110019 India
-                  </p>
+                    Malaysia Correspondent Office : Wisma Koponas, 74-2ND Floor
+                    Jalan Tun Sambanthan 50470, Kuala Lumpur
+                  </p>{" "}
+                  </div>
+              
+                  <br />
                 </div>
                 <div className="col-lg-6 col-12 pt-2 belowfootersubs text-left">
                   <div className="emailf d-flex align-items-center">
                     <i class="fa-regular fa-envelope"></i>{" "}
                     <p>
                       <a href="mailto:admin@asiawayholidays.com">
-                       &nbsp;  admin@asiawayholidays.com{" "}
+                        &nbsp; admin@asiawayholidays.com{" "}
                       </a>
                     </p>
                   </div>
@@ -76,7 +98,7 @@ export default function Footer() {
                     <i class="fa-regular fa-envelope"></i>{" "}
                     <p>
                       <a href="mailto:b2bsales@asiawayholiday.com">
-                      &nbsp;    b2bsales@asiawayholiday.com
+                        &nbsp; b2bsales@asiawayholiday.com
                       </a>
                     </p>
                   </div>
@@ -84,7 +106,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="col-lg-8 belowfootersubs text-left mt-3">
-              <h6>Copyrights © All Rights Reserved by ASIAWAY HOLIDAY</h6>
+              <h6>Copyrights © All Rights Reserved by ASIAWAY HOLIDAYS</h6>
             </div>
           </div>
         </div>

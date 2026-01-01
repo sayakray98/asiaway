@@ -24,11 +24,6 @@ export default function Mobilemenu() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/" onClick={onToggleMenu}>
-                    About
-                  </Link>
-                </li>
-                <li className="nav-item">
                   <Link className="nav-link" to="/blog" onClick={onToggleMenu}>
                     Blogs
                   </Link>

@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import logo from "../assets/images/logowhite.png";
+import logo from "../assets/images/logowhit.png";
 import "./Header/Header.css";
 import { Link } from "react-router-dom";
 import MenuContext from "../context/MenuContext";
@@ -57,11 +57,6 @@ export default function Header() {
                       <li className="nav-item active">
                         <Link className="nav-link" to="/home">
                           Home <span className="sr-only">(current)</span>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link className="nav-link" to="/">
-                          About
                         </Link>
                       </li>
                       <li className="nav-item">

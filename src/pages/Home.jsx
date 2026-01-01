@@ -1,20 +1,39 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Footer from "../components/Footer";
-import caro1 from "../assets/images/RiverWonder.jpg";
-import caro2 from "../assets/images/caro2.jpg";
-import caro3 from "../assets/images/caro3.jpg";
+import caro1 from "../assets/images/Little India at Diwali.jpg";
+import caro2 from "../assets/images/Marina Bay At night.jpg";
+import caro3 from "../assets/images/Murugan Statu at Batu Cave.png";
+import caro4 from "../assets/images/River Wonder.png";
+import caro5 from "../assets/images/Twin Tower, KL.jpg";
 import bg from "../assets/images/bg.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import singapore from "../assets/images/Singapore Flyer.jpg";
-import singaporenext from "../assets/images/Singapore Flyer Capsule.jpg";
-import singaporenext2 from "../assets/images/River Wonder.jpg";
-import singaporenext3 from "../assets/images/Bird Paradise.jpg";
-import slide_image_1 from "../assets/images/merlion Statue.jpg";
-import slide_image_2 from "../assets/images/S.E.A Aquarium.jpg";
-import slide_image_3 from "../assets/images/Sri Veeramakaliamman Temple.jpg";
-import slide_image_4 from "../assets/images/buddha-tooth-relic-temple.jpg";
-import slide_image_5 from "../assets/images/Changi Airport.jpg";
+import singaporenext from "../assets/images/Genting Highland Cable car.png";
+import singaporenext2 from "../assets/images/Eagle Square, Langkawi.png";
+import singaporenext3 from "../assets/images/International Cruise.jpg";
+import bird_paradise from "../assets/images/Bird Paradise.jpg";
+import cable_ride_sentosa from "../assets/images/Cable Ride at Sentosa Island.png";
+import egyptian_gallery_universal from "../assets/images/Egyptian Gallery , Universal Studio.jpg";
+import garden_by_the_bay from "../assets/images/Garden By the Bay.png";
+import night_safari_tram from "../assets/images/night safari tram ride.jpg";
+import skyline_ride_sentosa from "../assets/images/Skyline Ride @Sentosa.png";
+import skyluge_sentosa from "../assets/images/Skyluge @Sentosa.jpeg";
+import aquaria_kl from "../assets/images/Aquaria, Kuala Lumpur.png";
+import batu_cave_kilim from "../assets/images/Bat Cave, Kilim Geo Forest Park, Langkawi.png";
+import cable_car_langkawi from "../assets/images/Cable Car, Langkawi.png";
+import crocodile_park from "../assets/images/Crocodile Park, Langkawi.png";
+import entopia_penang from "../assets/images/Entopia Butterfly Firm,Penang.png";
+import funicular_penang from "../assets/images/Funicular Train Ride, Penang.png";
+import georgetown from "../assets/images/GerogeTown Heritage Site,Penang.png";
+import kek_lok_si from "../assets/images/Kek Lok Si Temple, Penang.png";
+import kilim_geo from "../assets/images/Kilim Geo Forest Park,Langkawi.png";
+import kl_tower from "../assets/images/KL tower, Kuala Lumpur.jpg";
+import legoland from "../assets/images/Legoland, Malaysia.png";
+import murugan_temple from "../assets/images/Murugan Temple, Batu Cave.png";
+import skybridge_1 from "../assets/images/Skybridge, Langkawi.png";
+import twin_tower from "../assets/images/Twin Tower, Kualalampur.png";
+
 import video from "../assets/images/WhatsApp Video 2025-12-21 at 9.46.27 PM.mp4";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -36,6 +55,8 @@ import "./Homepage/Home.css";
 
 export default function Home() {
   const [count, setCount] = useState(0);
+
+  const [category, setCategory] = useState("singapore");
 
   useEffect(() => {
     if (count > 1200) return; // stop when reached 10
@@ -84,12 +105,117 @@ export default function Home() {
   };
 
   const sliderData = [
-    { img: slide_image_1, title: "Merlion Statue" },
-    { img: slide_image_2, title: "S.E.A Aquarium" },
-    { img: slide_image_3, title: "SriVeeramakaliamman Temple" },
-    { img: slide_image_4, title: "Buddha Tooth Relic Temple" },
-    { img: slide_image_5, title: "Changi Airport" },
+    // 🔹 Singapore (already existing)
+    {
+      img: bird_paradise,
+      title: "Bird Paradise",
+      alt: "Singapore Bird Paradise",
+    },
+    {
+      img: cable_ride_sentosa,
+      title: "Cable Ride at Sentosa Island",
+      alt: "Singapore Cable Ride at Sentosa Island",
+    },
+    {
+      img: egyptian_gallery_universal,
+      title: "Egyptian Gallery, Universal Studio",
+      alt: "Singapore Egyptian Gallery Universal Studio",
+    },
+    {
+      img: garden_by_the_bay,
+      title: "Garden By the Bay",
+      alt: "Singapore Garden By the Bay",
+    },
+    {
+      img: night_safari_tram,
+      title: "Night Safari Tram Ride",
+      alt: "Singapore Night Safari Tram Ride",
+    },
+    {
+      img: skyline_ride_sentosa,
+      title: "Skyline Ride Sentosa",
+      alt: "Singapore Skyline Ride Sentosa",
+    },
+    {
+      img: skyluge_sentosa,
+      title: "Sky Luge Sentosa",
+      alt: "Singapore Sky Luge Sentosa",
+    },
+
+    // 🔹 Malaysia (from your images)
+    {
+      img: aquaria_kl,
+      title: "Aquaria KLCC",
+      alt: "Malaysia Aquaria Kuala Lumpur",
+    },
+    {
+      img: batu_cave_kilim,
+      title: "Batu Caves & Kilim Geo Forest Park",
+      alt: "Malaysia Batu Caves Kilim Geo Forest Park Langkawi",
+    },
+    {
+      img: cable_car_langkawi,
+      title: "Langkawi Cable Car",
+      alt: "Malaysia Langkawi Cable Car",
+    },
+    {
+      img: crocodile_park,
+      title: "Crocodile Park Langkawi",
+      alt: "Malaysia Crocodile Park Langkawi",
+    },
+    {
+      img: entopia_penang,
+      title: "Entopia Butterfly Farm",
+      alt: "Malaysia Entopia Butterfly Farm Penang",
+    },
+    {
+      img: funicular_penang,
+      title: "Penang Hill Funicular Train",
+      alt: "Malaysia Penang Hill Funicular Train",
+    },
+    {
+      img: georgetown,
+      title: "George Town Heritage Site",
+      alt: "Malaysia George Town Heritage Site Penang",
+    },
+    {
+      img: kek_lok_si,
+      title: "Kek Lok Si Temple",
+      alt: "Malaysia Kek Lok Si Temple Penang",
+    },
+    {
+      img: kilim_geo,
+      title: "Kilim Geo Forest Park",
+      alt: "Malaysia Kilim Geo Forest Park Langkawi",
+    },
+    { img: kl_tower, title: "KL Tower", alt: "Malaysia KL Tower Kuala Lumpur" },
+    {
+      img: legoland,
+      title: "Legoland Malaysia",
+      alt: "Malaysia Legoland Theme Park",
+    },
+    {
+      img: murugan_temple,
+      title: "Murugan Temple Batu Caves",
+      alt: "Malaysia Murugan Temple Batu Caves",
+    },
+    {
+      img: skybridge_1,
+      title: "Langkawi Sky Bridge",
+      alt: "Malaysia Langkawi Sky Bridge",
+    },
+    {
+      img: twin_tower,
+      title: "Petronas Twin Towers",
+      alt: "Malaysia Petronas Twin Towers Kuala Lumpur",
+    },
   ];
+  const filteredSlides = useMemo(() => {
+    return sliderData.filter((item) =>
+      item.alt.toLowerCase().includes(category)
+    );
+  }, [category]);
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -148,17 +274,25 @@ export default function Home() {
                 >
                   <div className="zoom-container">
                     <img src={caro1} alt="img1" className="zoom-img" />
-                    <h5 className="caroheader">Asiaway Holiday</h5>
+                    <h5 className="caroheader">Asiaway Holidays</h5>
                   </div>
 
                   <div className="zoom-container">
                     <img src={caro2} alt="img2" className="zoom-img" />
-                    <h5 className="caroheader">Asiaway Holiday</h5>
+                    <h5 className="caroheader">Asiaway Holidays</h5>
                   </div>
 
                   <div className="zoom-container">
                     <img src={caro3} alt="img3" className="zoom-img" />
-                    <h5 className="caroheader">Asiaway Holiday</h5>
+                    <h5 className="caroheader">Asiaway Holidays</h5>
+                  </div>
+                  <div className="zoom-container">
+                    <img src={caro4} alt="img4" className="zoom-img" />
+                    <h5 className="caroheader">Asiaway Holidays</h5>
+                  </div>
+                  <div className="zoom-container">
+                    <img src={caro5} alt="img5" className="zoom-img" />
+                    <h5 className="caroheader">Asiaway Holidays</h5>
                   </div>
                 </Carousel>
               </div>
@@ -172,7 +306,9 @@ export default function Home() {
           <div className="row align-items-center">
             <div className="col-12 col-md-10 col-lg-7 text-start">
               <div className="getoffertext">
-                <h5>Top Destination Management Company Of Singapore</h5>
+                <h5>
+                  Top Destination Management Company of Singapore, Malaysia
+                </h5>
                 <div className="getofferimg">
                   <img src={bg} alt="" />
                 </div>
@@ -181,44 +317,46 @@ export default function Home() {
 
             <div className="col-12 col-md-2 col-lg-5 d-flex justify-content-md-end mt-3 mt-md-0 getofferbtnmain">
               <div className="getofferbtn">
-                <a href="#">Get Offers</a>
+                <a href="https://sayakray98.github.io/asiaway/contact">
+                  Get Offers
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section className="whatwedo p-3 pt-5 mt-2">
-        <h5 className="whatwedoheading pb-4">What Asiaway Holiday Does</h5>
+        <h5 className="whatwedoheading pb-4">What Asiaway Holidays Does</h5>
         <div className="container-fluid mt-4 ">
           <div className="row text-">
             <div className="col-lg-6 pl-5 colimgtextmain">
               <div className="colimgtext  ml-5">
                 <div className="overlaynew"></div>
-                <h5>Asiaway Holiday</h5>
+                <h5>Asiaway Holidays</h5>
               </div>
             </div>
             <div className="col-lg-6 ">
-              <p className="text-left readbtn">
-                Asiaway Holiday is a destination management company providing
-                seamless and comprehensive travel management services in
-                Singapore through established on-ground partnerships. Backed by
-                strong local tie-ups and deep destination knowledge, we ensure
-                smooth coordination and reliable execution at every stage of the
-                journey.
+              <p className="readbtn">
+                Asiaway Holidays is a destination management company / b2b tour
+                operator providing seamless and comprehensive travel management
+                services in Singapore & Malaysia through established on-ground
+                partnerships. Backed by strong local tie-ups and deep
+                destination knowledge, we ensure smooth coordination and
+                reliable execution at every stage of the journey.
               </p>
-              <p className="text-left readbtnf mt-5">
+              <p className="readbtnf mt-5">
                 We offer end-to-end travel management solutions including
                 customized itinerary planning, hotel and accommodation
                 arrangements, ground transportation, sightseeing experiences,
                 MICE services, visa assistance, and complete on-ground support
-                in Singapore. Our experienced team manages every detail with
-                precision, enabling our B2B partners and clients to deliver
-                hassle-free, memorable travel experiences.
+                in Singapore & Malaysia. Our experienced team manages every
+                detail with precision, enabling our B2B partners and clients to
+                deliver hassle-free, memorable travel experiences.
               </p>
             </div>
-            <a className="readmore " href="/">
+            {/* <a className="readmore " href="/">
               Read more
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
@@ -247,7 +385,7 @@ export default function Home() {
                     alt=""
                     style={{ width: "85%", height: "255px" }}
                   />
-                  <h5 className="headfnew">Singapore Flyer Capsule</h5>
+                  <h5 className="headfnew">Genting Highland Cable Car</h5>
                 </div>
 
                 <div className="row m-0 p-0 mt-4 pt-2">
@@ -258,7 +396,7 @@ export default function Home() {
                         alt=""
                         style={{ width: "94%", height: "10.69rem" }}
                       />
-                      <h5 className="headf">River Wonder</h5>
+                      <h5 className="headf">Eagle Square Langkawi</h5>
                     </div>
                   </div>
                   <div className="col-lg-6 text-left p-0 m-0 mainimagemain">
@@ -268,7 +406,7 @@ export default function Home() {
                         alt=""
                         style={{ width: "87%", height: "10.69rem" }}
                       />
-                      <h5 className="headf">Bird Paradise</h5>
+                      <h5 className="headf">International Cruise</h5>
                     </div>
                   </div>
                 </div>
@@ -278,7 +416,7 @@ export default function Home() {
         </div>
       </section>
       <section className="dmc">
-        <h5 className="whatwedoheading p-3">Why Asiaway Holiday?</h5>
+        <h5 className="whatwedoheading p-3">Why Asiaway Holidays?</h5>
         <div className="container mt-4">
           <div className="row">
             <div className="col-lg-6 col-12">
@@ -286,11 +424,10 @@ export default function Home() {
                 <i class="fa-solid fa-money-check-dollar"></i>
                 <h5 className="p-2">Effecctive Cost</h5>
                 <p>
-                  Dedicated B2B Support & Competitive Pricing : Our experienced
-                  team delivers prompt responses and transparent pricing by
-                  sourcing rates directly from trusted on-ground partners in
-                  Singapore, ensuring excellent value for our B2B travel
-                  partners.
+                  Our experienced team delivers prompt responses and transparent
+                  pricing by sourcing rates directly from trusted on-ground
+                  partners in Singapore, ensuring excellent value for our B2B
+                  travel partners.
                 </p>
               </div>
             </div>
@@ -299,10 +436,9 @@ export default function Home() {
                 <i class="fa-solid fa-toolbox"></i>
                 <h5 className="p-2">Experience</h5>
                 <p>
-                   End-to-End Travel Management Expertise : our Backed by over
-                  10 years of Singapore tour management expertise, our founder
-                  and core team ensure smooth coordination and end-to-end
-                  execution for a hassle-free travel experience.
+                  Backed by over 10 years of tour management expertise, our
+                  founder and core team ensure smooth coordination and
+                  end-to-end execution for a hassle-free travel experience.
                 </p>
               </div>
             </div>
@@ -325,7 +461,33 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <h5 className="whatwedoheading pb-4">Attractions in Singapore</h5>
+              <h5 className="whatwedoheading pb-4 ">
+                Attractions in{" "}
+                {category === "singapore" ? "Singapore" : "Malaysia"}
+              </h5>
+
+              <div className="mb-4 text-end category-wrapper mt-3">
+                <button
+                  className={`category-btn ${
+                    category === "singapore" ? "active" : ""
+                  }`}
+                  onClick={() => setCategory("singapore")}
+                  type="button"
+                >
+                  Singapore
+                </button>
+
+                <button
+                  className={`category-btn ${
+                    category === "malaysia" ? "active" : ""
+                  }`}
+                  onClick={() => setCategory("malaysia")}
+                  type="button"
+                >
+                  Malaysia
+                </button>
+              </div>
+
               <Carousel
                 responsive={responsivenew}
                 infinite={true}
@@ -338,14 +500,12 @@ export default function Home() {
                 itemClass="slider-card"
                 containerClass="slider-container"
               >
-                {sliderData.map((item, i) => (
+                {filteredSlides.map((item, i) => (
                   <div className="gallery-card" key={i}>
                     <a href="https://sayakray98.github.io/asiaway/blog">
-                      {" "}
-                      <img src={item.img} alt={item.title} />
+                      <img src={item.img} alt={item.alt} />
                     </a>
-
-                    <p className="gallery-title">{item.title}</p>
+                    <h6 className="gallery-title">{item.title}</h6>
                   </div>
                 ))}
               </Carousel>

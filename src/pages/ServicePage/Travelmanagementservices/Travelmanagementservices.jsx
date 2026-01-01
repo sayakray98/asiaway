@@ -1,14 +1,13 @@
 import React from "react";
 
-import image_01 from "../../../assets/images/Night Safari.jpeg";
+import image_01 from "../../../assets/images/Flower Dome at Garden By the Bay.png";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import "./Travelmanagementservices.css";
 import { Link } from "react-router-dom";
-import service_01 from "../../../assets/images/Skyline Luge.jpeg";
-import service_02 from "../../../assets/images/Skywal at Fort Siloso.jpg";
-import service_03 from "../../../assets/images/Super Tree Grove at Garden by the Bay.jpg";
-
+import service_01 from "../../../assets/images/On_Deck Water Slide,Swimming Pool, Genting Dream Cruise.png";
+import service_02 from "../../../assets/images/Skywalk at Fort Siloso,Sentosa.png";
+import service_03 from "../../../assets/images/Super Tree Grove at Garden by the Bay.png";
 
 export default function Travelmanagementservices() {
   return (
@@ -34,14 +33,14 @@ export default function Travelmanagementservices() {
                   Explore Travel Management <br /> Services
                 </h5>
                 <p>
-                  Travel Management Services provide end-to-end planning,
-                  coordination, and support for business and personal travel
-                  needs. These services include itinerary planning, flight and
-                  hotel bookings, visa assistance, travel policy compliance,
-                  cost optimization, and 24/7 traveler support. By streamlining
-                  logistics and ensuring seamless travel experiences, travel
-                  management services help save time, reduce costs, and enhance
-                  traveler convenience and safety.
+                  Our travel management services offer comprehensive support for
+                  both business and personal travel, handling everything from
+                  planning to execution. We cover itinerary creation, flight and
+                  hotel reservations, visa support, cost control, and
+                  round-the-clock assistance for travellers. By streamlining
+                  every aspect of travel and ensuring a seamless experience, we
+                  help save time, reduce expenses, and enhance traveller
+                  comfort, convenience.
                 </p>
                 <button className="btn mt-3">
                   <Link to="/contact">
@@ -128,16 +127,14 @@ export default function Travelmanagementservices() {
                     </div>
 
                     <div className="secondcol">
-
                       <h5>MICE & Corporate Travel</h5>
                       <ol>
                         <li>Meetings, Incentives, Conferences & Events</li>
                         <li>Venue sourcing & coordination</li>
                         <li>Corporate group handling</li>
-                        
                       </ol>
 
-                       <div className="databtnsub">
+                      <div className="databtnsub">
                         <button className="btn mt-3">
                           <Link to="/contact">
                             Know More &nbsp;{" "}
@@ -157,14 +154,13 @@ export default function Travelmanagementservices() {
                     </div>
 
                     <div className="secondcol">
-
                       <h5>Visa & Documentation Support</h5>
                       <ol>
                         <li>Visa guidance & documentation assistance</li>
                         <li>Entry requirements & compliance advisory</li>
                       </ol>
 
-                       <div className="databtnsub">
+                      <div className="databtnsub">
                         <button className="btn mt-3">
                           <Link to="/contact">
                             Know More &nbsp;{" "}
@@ -183,13 +179,11 @@ export default function Travelmanagementservices() {
                     </div>
 
                     <div className="secondcol">
-
                       <h5>B2B Partner Services</h5>
                       <ol>
                         <li>Agent support & rate contracting</li>
                         <li>White-label itineraries</li>
                         <li>Voucher & documentation support</li>
-                       
                       </ol>
                       <div className="databtnsub">
                         <button className="btn mt-3">

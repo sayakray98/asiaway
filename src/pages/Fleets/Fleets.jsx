@@ -29,34 +29,59 @@ export default function Fleets() {
             </Link>
             &nbsp; / Our Fleets
           </h6>
+
+          <ul className="fleetslist mt-4">
+            <li>
+              <span>Private Tours</span> - Dedicated sedan vehicles for FITs, families,
+              customized itineraries, and airport pick-ups and drop-offs.
+            </li>
+            <li>
+              <span>SIC (Seat-in-Coach) Tours</span> - Shared transfers and sightseeing tours
+              operated on fixed schedules, primarily using 20-seater Toyota
+              Coaster or 13-seater Toyota Hiace.
+            </li>
+            <li>
+              <span>Group Tours</span> - Coaches and larger vehicles for leisure groups and
+              MICE tours, commonly including 23-seater Toyota Coaster or
+              44-seater coaches
+            </li>
+            <li>
+              <span>Luxury Tours</span> - Premium transportation featuring high-end vehicles
+              such as Mercedes-Benz and BMW, offering elevated comfort and
+              style.
+            </li>
+          </ul>
           <div className="row mainsectionfleets p-5 mt-4">
-            <div className="col-lg-12 col-12" >
+            <div className="col-lg-12 col-12">
               <div className="firstcolfleets">
                 <img src={fleet_05} alt="" />
               </div>
               <div className="secondcolfleets">
                 <h5 className="carsdetails">Toyota Hiace</h5>
 
-                <p>
+                {/* <p>
                   Private Tours – Dedicated sedan vehicles for FITs, families, customized itineraries, and airport pick-ups and drop-offs.
                   
-                </p>
+                </p> */}
 
-                <button className="btn">
+                <button className="btn mt-4">
                   <a href="/contact">Book Now</a>
                   <i className="fas fa-chevron-right"></i>
                 </button>
               </div>
             </div>
-            <div className="col-lg-12 col-12" style={{borderTop: "4px dotted #1d7625ff", paddingTop: "60px"}}>
+            <div
+              className="col-lg-12 col-12"
+              style={{ borderTop: "4px dotted #1d7625ff", paddingTop: "60px" }}
+            >
               <div className="firstcolfleets">
                 <h5 className="carsdetails">Audi</h5>
 
-                <p>
+                {/* <p>
                  SIC (Seat-in-Coach) Tours – Shared transfers and sightseeing tours operated on fixed schedules, primarily using 20-seater Toyota Coaster or 13-seater Toyota Hiace
-                </p>
+                </p> */}
 
-                <button className="btn">
+                <button className="btn mt-4">
                   <a href="/contact">Book Now</a>
                   <i className="fas fa-chevron-right"></i>
                 </button>
@@ -65,32 +90,38 @@ export default function Fleets() {
                 <img src={fleet_02} alt="" />
               </div>
             </div>
-            <div className="col-lg-12 col-12" style={{borderTop: "4px dotted #1d7625ff", paddingTop: "60px"}}>
+            <div
+              className="col-lg-12 col-12"
+              style={{ borderTop: "4px dotted #1d7625ff", paddingTop: "60px" }}
+            >
               <div className="firstcolfleets">
                 <img src={fleet_03} alt="" />
               </div>
               <div className="secondcolfleets">
                 <h5 className="carsdetails">BMW</h5>
 
-                <p>
+                {/* <p>
                 Luxury Tours – Premium transportation featuring high-end vehicles such as Mercedes-Benz and BMW, offering elevated comfort and style.
-                </p>
+                </p> */}
 
-                <button className="btn">
+                <button className="btn mt-4">
                   <a href="/contact">Book Now</a>
                   <i className="fas fa-chevron-right"></i>
                 </button>
               </div>
             </div>
-            <div className="col-lg-12 col-12" style={{borderTop: "4px dotted #1d7625ff", paddingTop: "60px"}}>
+            <div
+              className="col-lg-12 col-12"
+              style={{ borderTop: "4px dotted #1d7625ff", paddingTop: "60px" }}
+            >
               <div className="firstcolfleets">
                 <h5 className="carsdetails">Toyota Coaster- 20 seater</h5>
 
-                <p>
+                {/* <p>
 
-               Group Tours – Coaches and larger vehicles for leisure groups and MICE tours, commonly including 23-seater Toyota Coaster or 44-seater coaches.  </p>
+               Group Tours – Coaches and larger vehicles for leisure groups and MICE tours, commonly including 23-seater Toyota Coaster or 44-seater coaches.  </p> */}
 
-                <button className="btn">
+                <button className="btn mt-4">
                   <a href="/contact">Book Now</a>
                   <i className="fas fa-chevron-right"></i>
                 </button>
@@ -99,18 +130,21 @@ export default function Fleets() {
                 <img src={fleet_04} alt="" />
               </div>
             </div>
-            <div className="col-lg-12 col-12" style={{borderTop: "4px dotted #1d7625ff", paddingTop: "60px"}}>
+            <div
+              className="col-lg-12 col-12"
+              style={{ borderTop: "4px dotted #1d7625ff", paddingTop: "60px" }}
+            >
               <div className="firstcolfleets">
                 <img src={fleet_01} alt="" />
               </div>
               <div className="secondcolfleets">
                 <h5 className="carsdetails">44 seater AC Coach</h5>
 
-                <p>
+                {/* <p>
                    Private Tours - Dedicated sedan vehicles for FITs, families, customized itineraries, and airport pick-ups and drop-offs.
-                </p>
+                </p> */}
 
-                <button className="btn">
+                <button className="btn mt-4">
                   <a href="/contact">Book Now</a>
                   <i className="fas fa-chevron-right"></i>
                 </button>

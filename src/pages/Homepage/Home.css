@@ -180,7 +180,7 @@ body {
   background: rgba(0, 0, 0, 0.467);
   color: white;
   padding: 10px;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 2px;
 }
 .headfnew {
@@ -504,6 +504,36 @@ body {
 .testimonial {
   background-color: #f7f9fb;
 }
+
+.category-wrapper {
+  display: inline-flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.category-btn {
+  padding: 10px 26px;
+  border-radius: 999px;
+  border: 1.5px solid #1f7a3f;
+  background: transparent;
+  color: #1f7a3f;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.category-btn:hover {
+  background-color: #1f7a3f;
+  color: #ffffff;
+}
+
+.category-btn.active {
+  background-color: #1f7a3f;
+  color: #ffffff;
+  border-color: #1f7a3f;
+}
+
 
 @media only screen and (max-width: 600px) {
   .getofferbtnmain {
