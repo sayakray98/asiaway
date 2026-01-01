@@ -34,7 +34,7 @@ import murugan_temple from "../assets/images/Murugan Temple, Batu Cave.png";
 import skybridge_1 from "../assets/images/Skybridge, Langkawi.png";
 import twin_tower from "../assets/images/Twin Tower, Kualalampur.png";
 
-import video from "../assets/images/WhatsApp Video 2025-12-21 at 9.46.27 PM.mp4";
+import video from "../assets/images/WhatsApp Video 2025-12-29 at 11.23.20 PM.mp4";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
