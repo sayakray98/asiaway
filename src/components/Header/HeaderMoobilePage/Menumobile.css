@@ -1,3 +1,55 @@
+@media only screen and (min-width: 601px) and (max-width: 899px) {
+  .menumobile {
+    position: fixed;
+    background: black;
+    z-index: 9999999;
+    width: 100%;
+    top: 0;
+    color: white;
+    left: 0;
+    height: 200cm;
+  }
+
+  .menumobile {
+    overflow-y: hidden !important;
+  }
+  .menumobile::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .navbar-navnew {
+    text-align: left;
+  }
+
+  .navbar-navnew li {
+    list-style: none;
+    font-style: italic;
+  }
+
+  .navbar-navnew li a {
+    color: white !important;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .fa-xmark {
+    border: 2px solid #1e703e;
+    padding: 8px 12px;
+    margin-top: 20px;
+    width: 12%;
+    color: #1e703e!important;
+  }
+
+  .navbar-navnew {
+    margin-top: 8px;
+    padding: 0 !important;
+  }
+}
+
+
+
+
+
 @media only screen and (max-width: 600px) {
   .menumobile {
     position: fixed;

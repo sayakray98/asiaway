@@ -59,7 +59,7 @@ export default function Footer() {
                   <div className="subscategory d-flex align-items-center">
                     <i class="fa-solid fa-location-crosshairs"></i> &nbsp;
                     &nbsp;
-                    <p>
+                    <p className="addressparagraph">
                       India Office : 302, Galaxy Apartment, RZ-2001/B Gali No.
                       24, Tughlakabad Extension New Delhi - 110019 India
                     </p>
@@ -68,7 +68,7 @@ export default function Footer() {
                   <div className="subscategory d-flex align-items-center">
                     <i class="fa-solid fa-location-crosshairs"></i> &nbsp;
                     &nbsp;
-                    <p>
+                    <p className="addressparagraph">
                       Singapore Correspondent Office : 260A Sengkang East
                       Way,#06-486, Postal , Singapore 541260
                     </p>
@@ -77,7 +77,7 @@ export default function Footer() {
                   <div className="subscategory d-flex align-items-center">
                     <i class="fa-solid fa-location-crosshairs"></i> &nbsp;
                     &nbsp;
-                    <p>
+                    <p className="addressparagraph">
                       Malaysia Correspondent Office : Wisma Koponas, 74-2ND
                       Floor Jalan Tun Sambanthan 50470, Kuala Lumpur
                     </p>{" "}

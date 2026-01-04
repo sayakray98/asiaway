@@ -534,6 +534,54 @@ body {
   border-color: #1f7a3f;
 }
 
+@media only screen and (min-width: 601px) and (max-width: 899px) {
+  .getofferbtn > a {
+    width: 30% !important;
+    font-size: 8px !important;
+  }
+  .getoffertext h5 {
+    color: white;
+    font-size: 16px;
+  }
+  .colimgtextmain {
+    padding: 0px !important;
+  }
+
+  .readbtn {
+    margin-top: 20px;
+  }
+
+  .mainimage {
+    padding: 0px !important;
+  }
+
+  .immainfirst {
+    text-align: center !important;
+  }
+
+  .immainsecond {
+    text-align: center !important;
+  }
+
+  .subimgesfirst img {
+    height: 29.69rem !important;
+  }
+
+  .mainimagemain img {
+    height: 29.69rem !important;
+  }
+  .mainimagemain {
+    text-align: center !important;
+  }
+
+  .imgsubnew {
+    margin-top: 20px;
+  }
+
+  .subimgeslast {
+    margin-top: 20px;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .getofferbtnmain {
@@ -591,30 +639,25 @@ body {
     object-fit: cover;
     transform: translateX(-2px);
     border: 21px solid black;
-}
+  }
 
-.detailsoffooter{
-  text-align: center !important;
-}
+  .detailsoffooter {
+    text-align: center !important;
+  }
 
-
-
-.enquiedetails {
-  margin-top: 30px;
+  .enquiedetails {
+    margin-top: 30px;
     align-items: center !important;
     display: flex !important;
     justify-content: center !important;
-}
+  }
 
-
-
-.gallery-title {
+  .gallery-title {
     margin-top: 10px;
     font-size: 1rem;
     font-weight: 500;
     color: #000;
-}
-
+  }
 
   .getofferimg img {
     width: 70%;
@@ -651,11 +694,15 @@ body {
   .readbtn {
     padding: 20px 30px;
     font-size: 15px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
   }
   .readbtnf {
     margin: 0 !important;
     padding: 20px 30px;
     font-size: 15px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
   }
   .mainimage img {
     height: 13.8rem !important;
@@ -676,12 +723,8 @@ body {
   .mainimagemain {
     text-align: center !important;
   }
-
-  .videoiframe iframe {
-    height: 230px !important;
-  }
-
   .videoiframe {
-    height: 6px !important;
+    width: 100%;
+    height: 0px !important;
   }
 }

@@ -15,7 +15,7 @@ export default function Header() {
         <nav className="navbar navbar-expand-lg p-0">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-lg-4 col-md-6 col-8">
+              <div className="col-lg-4 col-md-11 col-8">
                 <Link
                   className="navbar-brand pl-5 ml-5"
                   to="/"
@@ -30,7 +30,7 @@ export default function Header() {
                 </Link>
               </div>
 
-              <div className="col-lg-8 col-md-6 col-4 d-flex align-items-center justify-content-center">
+              <div className="col-lg-8 col-md-1 col-4 d-flex align-items-center justify-content-center">
                 <div className="navdetails">
                   <button
                     className="navbar-toggler"

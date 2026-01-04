@@ -54,6 +54,7 @@ import Header from "../components/Header";
 import "./Homepage/Home.css";
 
 export default function Home() {
+  const isMobile = window.innerWidth < 1024;
   const [count, setCount] = useState(0);
 
   const [category, setCategory] = useState("singapore");
@@ -230,7 +231,7 @@ export default function Home() {
     mobile: {
       breakpoint: { max: 600, min: 0 },
       items: 0,
-      partialVisibilityGutter: 40,
+      partialVisibilityGutter: 0,
     },
   };
   const responsivenew = {
@@ -317,9 +318,7 @@ export default function Home() {
 
             <div className="col-12 col-md-2 col-lg-5 d-flex justify-content-md-end mt-3 mt-md-0 getofferbtnmain">
               <div className="getofferbtn">
-                <a href="https://www.asiawayholidays.com/contact">
-                  Get Offers
-                </a>
+                <a href="https://www.asiawayholidays.com/contact">Get Offers</a>
               </div>
             </div>
           </div>
@@ -367,7 +366,7 @@ export default function Home() {
         </h5>
         <div className="container-fluid mt-5">
           <div className="row m-0 p-0">
-            <div className="col-lg-7 text-right m-0 p-0 ">
+            <div className="col-lg-7 col-md-12 text-right m-0 p-0 immainfirst">
               <div className="mainimage">
                 <img
                   src={singapore}
@@ -377,7 +376,7 @@ export default function Home() {
                 <h5 className="headf">Singapore Flyer</h5>
               </div>
             </div>
-            <div className="col-lg-5  text-left m-0 p-0 immain">
+            <div className="col-lg-5  text-left m-0 p-0 immain immainsecond">
               <div className="imgsub">
                 <div className="imgsubnew">
                   <img
@@ -493,7 +492,8 @@ export default function Home() {
                 infinite={true}
                 autoPlay={true}
                 autoPlaySpeed={2500}
-                centerMode={true}
+                partialVisible={isMobile} // ✅ mobile only
+                centerMode={!isMobile} // ✅ desktop only
                 arrows={false}
                 showDots={true}
                 renderDotsOutside={true}
