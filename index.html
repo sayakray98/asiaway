@@ -34,7 +34,7 @@
       const redirect = localStorage.getItem("redirect");
       if (redirect) {
         localStorage.removeItem("redirect");
-        window.history.replaceState(null, "", "/asiaway" + redirect);
+        window.history.replaceState(null, "", "/" + redirect);
       }
     </script>
   </head>
