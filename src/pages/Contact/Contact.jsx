@@ -129,9 +129,10 @@ const handleSubmit = async (e) => {
                       className="form-select"
                     >
                       <option value="">Select</option>
-                      <option value="Talk Radio">Talk Radio</option>
+                      <option value="Talk Radio">Google search/ Online Search</option>
                       <option value="Social Media">Social Media</option>
                       <option value="Friend">Friend</option>
+                      <option value="Friend">Travel show/exhibitions </option>
                       <option value="Other">Other</option>
                     </select>
                   </div>

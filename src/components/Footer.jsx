@@ -103,6 +103,14 @@ export default function Footer() {
                       </a>
                     </p>
                   </div>
+                  <div className="emaill d-flex align-items-center mt-5">
+                    <i class="fa-solid fa-mobile"></i>{" "}
+                    <p>
+                      <a href="tel:+91 8879818079">
+                        &nbsp; +91 8879818079
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
