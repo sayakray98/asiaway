@@ -8,12 +8,12 @@ import App from "./App.jsx";
 import MenuProvider from "./context/MenuProvider.jsx";
 
 
-const basename = import.meta.env.MODE === "production" ? "/asiaway" : "/";
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <MenuProvider>
-    <BrowserRouter basename={basename}>
+    <BrowserRouter>
       <App />
     </BrowserRouter>
     </MenuProvider>

@@ -317,7 +317,7 @@ export default function Home() {
 
             <div className="col-12 col-md-2 col-lg-5 d-flex justify-content-md-end mt-3 mt-md-0 getofferbtnmain">
               <div className="getofferbtn">
-                <a href="https://sayakray98.github.io/asiaway/contact">
+                <a href="https://www.asiawayholidays.com/contact">
                   Get Offers
                 </a>
               </div>
@@ -502,7 +502,7 @@ export default function Home() {
               >
                 {filteredSlides.map((item, i) => (
                   <div className="gallery-card" key={i}>
-                    <a href="https://sayakray98.github.io/asiaway/blog">
+                    <a href="https://www.asiawayholidays.com/blog">
                       <img src={item.img} alt={item.alt} />
                     </a>
                     <h6 className="gallery-title">{item.title}</h6>
