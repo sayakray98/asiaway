@@ -33,6 +33,19 @@ import legoland from "../assets/images/Legoland, Malaysia.png";
 import murugan_temple from "../assets/images/Murugan Temple, Batu Cave.png";
 import skybridge_1 from "../assets/images/Skybridge, Langkawi.png";
 import twin_tower from "../assets/images/Twin Tower, Kualalampur.png";
+import Amphibious from "../assets/images/Amphibious Duck Boat Tour.png";
+import Safari_River from "../assets/images/Boat Safari-River Wonder.png";
+import Buddha_Tooth from "../assets/images/Buddha Tooth Relic Temple.png";
+import Time_Water from "../assets/images/Wings of Time- Water & Laser Show.png";
+import Vision_of_Magic from "../assets/images/Vision of Magic - Harry Potter.png";
+import Aquarium from "../assets/images/S.E.A. Aquarium.png";
+import Helix_Bridge from "../assets/images/Helix Bridge.jpg";
+import Sri_Veeramakaliamman from "../assets/images/Sri Veeramakaliamman Temple.jpg";
+import Fort_Siloso from "../assets/images/Fort Siloso Skywalk.png";
+import Fort_Siloso_Military_Museum from "../assets/images/Fort Siloso Military Museum.png";
+import Jewel_Changi_Airport from "../assets/images/Jewel Changi Airport - Rain Vortex.png";
+import Museum_of_Ice_Cream from "../assets/images/Museum of Ice Cream.png";
+import River_Wonder from "../assets/images/River Wonder.png";
 
 import video from "../assets/images/WhatsApp Video 2025-12-29 at 11.23.20 PM.mp4";
 
@@ -142,6 +155,82 @@ export default function Home() {
       title: "Sky Luge Sentosa",
       alt: "Singapore Sky Luge Sentosa",
     },
+
+    {
+      img: Amphibious,
+      title: "Amphibious Duck Boat Tour",
+      alt: "Singapore Amphibious Duck Boat Tour",
+    },
+    {
+      img: Safari_River,
+      title: "Boat Safari-River Wonder",
+      alt: "Singapore Boat Safari-River Wonder",
+    },
+    {
+      img: Buddha_Tooth,
+      title: "Buddha Tooth Relic Temple",
+      alt: "Singapore Buddha Tooth Relic Temple",
+    },
+    {
+      img: Time_Water,
+      title: "Wings of Time- Water & Laser Show",
+      alt: "Singapore Wings of Time- Water & Laser Show",
+    },
+    {
+      img: Vision_of_Magic,
+      title: "Vision of Magic - Harry Potter",
+      alt: "Singapore Vision of Magic - Harry Potter",
+    },
+    {
+      img: Aquarium,
+      title: "S.E.A. Aquarium",
+      alt: "Singapore S.E.A. Aquarium",
+    },
+
+    {
+      img: Helix_Bridge,
+      title: "Helix Bridge",
+      alt: "Singapore Helix Bridge",
+    },
+
+    {
+      img: Sri_Veeramakaliamman,
+      title: "Sri Veeramakaliamman Temple",
+      alt: "Singapore Sri Veeramakaliamman Temple",
+    },
+
+    {
+      img: Fort_Siloso,
+      title: "Fort Siloso Skywalk",
+      alt: "Singapore Fort Siloso Skywalk",
+    },
+
+    {
+      img: Fort_Siloso_Military_Museum,
+      title: "Fort Siloso Military Museum",
+      alt: "Singapore Fort Siloso Military Museum",
+    },
+
+    {
+      img: Jewel_Changi_Airport,
+      title: "Jewel Changi Airport - Rain Vortex",
+      alt: "Singapore Jewel Changi Airport - Rain Vortex",
+    },
+
+    {
+      img: Museum_of_Ice_Cream,
+      title: "Museum of Ice Cream",
+      alt: "Singapore Museum of Ice Cream",
+    },
+
+    {
+      img: River_Wonder,
+      title: "River Wonder",
+      alt: "Singapore River Wonder",
+    },
+
+   
+
 
     // 🔹 Malaysia (from your images)
     {
@@ -492,8 +581,8 @@ export default function Home() {
                 infinite={true}
                 autoPlay={true}
                 autoPlaySpeed={2500}
-                partialVisible={isMobile} // ✅ mobile only
-                centerMode={!isMobile} // ✅ desktop only
+                partialVisible={isMobile}
+                centerMode={!isMobile}
                 arrows={false}
                 showDots={true}
                 renderDotsOutside={true}
