@@ -292,7 +292,9 @@ body {
 .attractionSwiper .swiper-slide {
   display: flex;
   justify-content: center;
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
 }
 
 /* Card styling */
@@ -692,14 +694,14 @@ body {
     font-size: 25px;
   }
   .readbtn {
-    padding: 20px 30px;
+    padding: 20px 19.7px;
     font-size: 15px;
     word-spacing: 0px;
     letter-spacing: 0px;
   }
   .readbtnf {
     margin: 0 !important;
-    padding: 20px 30px;
+    padding: 20px 19.7px;
     font-size: 15px;
     word-spacing: 0px;
     letter-spacing: 0px;
