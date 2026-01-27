@@ -60,8 +60,8 @@ export default function Footer() {
                     <i class="fa-solid fa-location-crosshairs"></i> &nbsp;
                     &nbsp;
                     <p className="addressparagraph">
-                      India Office : 302, Galaxy Apartment, RZ-2001/B Gali No.
-                      24, Tughlakabad Extension New Delhi - 110019 India
+                      India Office : OFFICE NO. 1103, ASTRALIS, SUPERTECH
+                      SUPERNOVA, SECTOR- 94, NOIDA, UTTAR PRADESH- 201301
                     </p>
                   </div>
                   <br />
@@ -106,9 +106,7 @@ export default function Footer() {
                   <div className="emaill d-flex align-items-center mt-5">
                     <i class="fa-solid fa-mobile"></i>{" "}
                     <p>
-                      <a href="tel:+91 8879818079">
-                        &nbsp; +91 8879818079
-                      </a>
+                      <a href="tel:+91 8879818079">&nbsp; +91 8879818079</a>
                     </p>
                   </div>
                 </div>
