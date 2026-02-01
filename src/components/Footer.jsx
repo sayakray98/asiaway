@@ -60,8 +60,8 @@ export default function Footer() {
                     <i class="fa-solid fa-location-crosshairs"></i> &nbsp;
                     &nbsp;
                     <p className="addressparagraph">
-                      India Office : OFFICE NO. 1103, ASTRALIS, SUPERTECH
-                      SUPERNOVA, SECTOR- 94, NOIDA, UTTAR PRADESH- 201301
+                      India Office : Office No. 1103, Astralis, Supertech
+                      Supernova, Sector- 94, Noida, India, 201303
                     </p>
                   </div>
                   <br />
