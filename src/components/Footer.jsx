@@ -75,7 +75,7 @@ export default function Footer() {
                     &nbsp;
                     <p className="addressparagraph">
                       Singapore Correspondent Office : 260A Sengkang East
-                      Way,#06-486, Postal , Singapore 541260
+                      Way,#06-486, Singapore 541260
                     </p>
                   </div>
                   <br />
