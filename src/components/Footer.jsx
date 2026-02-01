@@ -92,6 +92,7 @@ export default function Footer() {
                       <a href="mailto:admin@asiawayholidays.com">
                         &nbsp; admin@asiawayholidays.com{" "}
                       </a>
+                      (For general queries & partnerships / tie-ups)
                     </p>
                   </div>
 
@@ -101,6 +102,7 @@ export default function Footer() {
                       <a href="mailto:b2bsales@asiawayholidays.com">
                         &nbsp; b2bsales@asiawayholidays.com
                       </a>
+                      (For quotation requests)
                     </p>
                   </div>
                   <div className="emaill d-flex align-items-center mt-5">
