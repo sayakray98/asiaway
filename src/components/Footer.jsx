@@ -84,7 +84,7 @@ export default function Footer() {
                     &nbsp;
                     <p className="addressparagraph">
                       Malaysia Correspondent Office : Wisma Koponas, 74-2ND
-                      Floor Jalan Tun Sambanthan 50470, Kuala Lumpur
+                      Floor Jalan Tun Sambanthan, Kuala Lumpur 50470
                     </p>{" "}
                   </div>
 
