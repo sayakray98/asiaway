@@ -32,15 +32,15 @@ export default function Footer() {
             </div>
             <div className="col-lg-6 text-right">
               <div className="socialicons">
-                <i class="fa-brands fa-facebook"></i>
+          <a href="https://www.facebook.com/people/AsiaWay-Holidays/61586820883804/"></a>      <i class="fa-brands fa-facebook"></i>
                 <a href="https://wa.me/+918879818079">
-                  <i class="fa-brands fa-whatsapp"></i>
-                </a>
+                  <i class="fa-brands fa-whatsapp"></i> </a>
+               
                 {/* <i class="fa-brands fa-x-twitter"></i> */}
-                <a href="https://www.facebook.com/people/AsiaWay-Holidays/61586820883804/">
+              
                   {" "}
                   <i class="fa-brands fa-instagram"></i>
-                </a>
+               
               </div>
             </div>
             <div className="col-lg-12 belowfootersubs text-justify">
@@ -96,7 +96,7 @@ export default function Footer() {
                     <p>
                       <a href="mailto:admin@asiawayholidays.com">
                         &nbsp; admin@asiawayholidays.com{" "}
-                      </a>
+                      </a> <br />
                       (For general queries & partnerships / tie-ups)
                     </p>
                   </div>
