@@ -30,18 +30,35 @@ export default function Mobilemenu() {
                 </li>
 
                 <li className="nav-item">
-                  <Link className="nav-link" to="/services" onClick={onToggleMenu}>
+                  <Link
+                    className="nav-link"
+                    to="/services"
+                    onClick={onToggleMenu}
+                  >
                     Services
                   </Link>
                 </li>
 
                 <li className="nav-item">
-                  <Link className="nav-link" to="/fleets" onClick={onToggleMenu}>
+                  <Link
+                    className="nav-link"
+                    to="/fleets"
+                    onClick={onToggleMenu}
+                  >
                     Our Fleets
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/contact" onClick={onToggleMenu}>
+                  <Link className="nav-link" to="/itinerary">
+                    itinerary
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link"
+                    to="/contact"
+                    onClick={onToggleMenu}
+                  >
                     Contact
                   </Link>
                 </li>
