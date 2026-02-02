@@ -1,5 +1,6 @@
 .footer {
-  background: url("../../assets/images/Cable Car at Sentosa Island.jpeg") center no-repeat;
+  background: url("../../assets/images/Cable Car at Sentosa Island.jpeg") center
+    no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -90,10 +91,10 @@ footer {
   right: 13%;
   z-index: 999;
   position: absolute;
-  border:2px solid white
+  border: 2px solid white;
 }
 
-.belowfootersubslinks{
+.belowfootersubslinks {
   padding-left: 38px;
 }
 
@@ -104,24 +105,24 @@ footer {
   margin: 0;
 }
 .belowfootersubs .emaill p {
-   margin: 0;  
+  margin: 0;
 }
 .belowfootersubs .emailf a {
   color: black;
 }
 .belowfootersubs .emaill a {
-   color: black;
+  color: black;
 }
 
 .attractiondetailssub {
   border: 2px solid white;
 }
 
-.mailid-detail{
-  margin-top: 19px;
+.mailid-detail {
+  margin-top: 19px !important;
 }
 
-.custom-para{
+.custom-para {
   font-size: 12px;
 }
 
@@ -169,7 +170,7 @@ footer {
   .whatsappl {
     justify-content: center;
   }
-  .emailf  {
+  .emailf {
     justify-content: center;
   }
 
@@ -177,9 +178,7 @@ footer {
     justify-content: center;
   }
 
-  .mailid-detail{
-  margin-top: 0px;
-}
-
-  
+  .mailid-detail {
+    margin-top: 0px !important;
+  }
 }
