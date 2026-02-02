@@ -49,7 +49,7 @@ export default function Mobilemenu() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/itinerary">
+                  <Link className="nav-link" to="/itinerary" onClick={onToggleMenu}>
                     itinerary
                   </Link>
                 </li>
