@@ -326,7 +326,7 @@ export default function Home() {
   const responsivenew = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 2,
       partialVisibilityGutter: 60, // left+right preview
     },
     tablet: {

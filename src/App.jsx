@@ -11,6 +11,7 @@ import Mobilemenu from "./components/Header/HeaderMoobilePage/Menumobile";
 import Fleets from "./pages/Fleets/Fleets";
 import Travelmanagementservices from "./pages/ServicePage/Travelmanagementservices/Travelmanagementservices";
 import Blogs from "./Blog/Blogs";
+import Itinerary from "./pages/Itinerary/Itinerary";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/services" element={<Travelmanagementservices />} />
         <Route path="/fleets" element={<Fleets />} />
         <Route path="/blog" element={<Blogs />} />
+        <Route path="/itinerary" element={<Itinerary />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Mobilemenu />
