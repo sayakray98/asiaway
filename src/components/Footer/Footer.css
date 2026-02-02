@@ -117,6 +117,14 @@ footer {
   border: 2px solid white;
 }
 
+.mailid-detail{
+  margin-top: 19px;
+}
+
+.custom-para{
+  font-size: 12px;
+}
+
 @media only screen and (max-width: 600px) {
   .attractiondetails {
     background-color: #1e703e;
@@ -168,5 +176,10 @@ footer {
   .emaill {
     justify-content: center;
   }
+
+  .mailid-detail{
+  margin-top: 0px;
+}
+
   
 }

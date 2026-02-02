@@ -93,12 +93,12 @@ export default function Footer() {
                 <div className="col-lg-6 col-12 pt-2 belowfootersubs text-left">
                   <div className="emailf d-flex align-items-center">
                     <i class="fa-regular fa-envelope"></i>{" "}
-                    <p>
+                    <p className="mailid-detail">
                       <a href="mailto:admin@asiawayholidays.com">
                         &nbsp; admin@asiawayholidays.com{" "}
                       </a>{" "}
                       <br />
-                      (For general queries & partnerships / tie-ups)
+                   <span className="custom-para" >   (For general queries & partnerships / tie-ups)</span>
                     </p>
                   </div>
 
@@ -108,7 +108,7 @@ export default function Footer() {
                       <a href="mailto:b2bsales@asiawayholidays.com">
                         &nbsp; b2bsales@asiawayholidays.com
                       </a>
-                      (For quotation requests)
+                   <span className="custom-para" >    (For quotation requests)</span > 
                     </p>
                   </div>
                   <div className="emaill d-flex align-items-center mt-5">
