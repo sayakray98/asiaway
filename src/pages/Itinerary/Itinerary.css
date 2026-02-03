@@ -305,20 +305,18 @@
 
 /* ACTIVE TAB */
 .package-tab.active {
-  background:  #258a4f; /* dark navy */
+  background: #258a4f; /* dark navy */
   color: #ffffff;
   font-weight: 600;
 }
 
-.icon-detail{
-  background:  #258a4f5e;
+.icon-detail {
+  background: #258a4f5e;
   color: rgb(255, 255, 255);
   padding: 5px;
   border-radius: 6px;
-  
 }
-.icon-detail svg{
- 
+.icon-detail svg {
   font-size: 2px;
 }
 
@@ -395,8 +393,8 @@
   gap: 30px;
 }
 
-.btn-iti{
-  color: white!important;
+.btn-iti {
+  color: white !important;
 }
 
 .detail-day-card {
@@ -446,15 +444,15 @@
   margin-left: 20px;
 }
 
-.clock-icon{
+.clock-icon {
   width: 18px;
 }
 
-.calendar-icon{
-   width: 18px;
+.calendar-icon {
+  width: 18px;
 }
-.mappin-icon{
-   width: 18px;
+.mappin-icon {
+  width: 18px;
 }
 
 /* HEADER */
@@ -493,8 +491,6 @@
 
 /* ACTIVITY LIST */
 .detail-activity-list {
-
- 
   padding-left: 16px;
   margin-top: 16px;
 }
@@ -503,6 +499,25 @@
   font-size: 16px;
   margin-bottom: 4px;
   color: #374151;
+}
+
+.custom-title{
+  margin-top: 60px;
+  background-color: #c3c8c692;
+  width: 60%;
+  margin: 60px auto;
+  color: white;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.custom-plus-icon {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  font-size: 49px;
+  color: #beb8b8;
 }
 
 /* OVERLAY */
@@ -543,7 +558,7 @@
 .modal-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,.75), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
 }
 
 .modal-hero-text {
@@ -602,9 +617,15 @@
   color: #fff;
 }
 
-.dest-badge.singapore { background: #f43f5e; }
-.dest-badge.kuala\ lumpur { background: #f59e0b; }
-.dest-badge.langkawi { background: #10b981; }
+.dest-badge.singapore {
+  background: #f43f5e;
+}
+.dest-badge.kuala\ lumpur {
+  background: #f59e0b;
+}
+.dest-badge.langkawi {
+  background: #10b981;
+}
 
 .highlight-pill {
   padding: 6px 12px;
@@ -648,17 +669,17 @@
   border-top: 1px solid #e5e7eb;
 }
 
-.itinerary-modal{
+.itinerary-modal {
   text-align: left;
 }
 
-.dest-badge.kuala{
+.dest-badge.kuala {
   background-color: #f59e0b;
 }
-.dest-badge.cruise{
+.dest-badge.cruise {
   background-color: #0b84f5;
 }
 
-.travel-overlay-2{
+.travel-overlay-2 {
   text-align: left;
 }

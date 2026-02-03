@@ -1,31 +1,37 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Contactform.css";
 import emailjs from "emailjs-com";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import dayjs from "dayjs";
-import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormControl from "@mui/material/FormControl";
+import FormLabel from "@mui/material/FormLabel";
 
 export default function Contactform() {
   const [formData, setFormData] = useState({
-    name: "",
+    agencyName: "",
+    agentName: "",
     email: "",
     phone: "",
-    days: 4,
-    nights: 3,
-    message: "",
     travelDate: null,
+    nights: "",
+    hotelType: "",
+    preferredHotel: "",
+    rooms: "",
+    adults: "",
+    kids: "",
+    kidsAge: "",
+    requirement: "",
   });
 
-  // Auto-calculate nights
-  useEffect(() => {
-    setFormData((prev) => ({
-      ...prev,
-      nights: prev.days > 0 ? prev.days - 1 : 0,
-    }));
-  }, [formData.days]);
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -36,81 +42,58 @@ export default function Contactform() {
         e.target,
         "H8ycHLmBCtL0E7bwt",
       )
-      .then(() => {
-        alert("Message sent successfully!");
-      })
-      .catch((error) => {
-        console.error(error);
-        alert("Failed to send message");
-      });
-
-    e.target.reset();
-  };
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Custom Package:", formData);
-    alert("Custom itinerary request submitted!");
+      .then(() => alert("Request submitted successfully!"))
+      .catch(() => alert("Failed to send request"));
   };
 
   return (
     <div className="contact-form-wrapper">
-      <h3 className="contact-title">Create Your Custom Package</h3>
-      <p className="contact-subtitle">
-        Customize your trip duration and tell us what you want.
-      </p>
+      <h3 className="contact-title">Custom Itinerary Request</h3>
 
-      <form className="contact-form" onSubmit={sendEmail}>
-        {/* FULL NAME */}
-        <div className="form-group">
+      <form className="contact-form mt-4" onSubmit={sendEmail}>
+        {/* Agency Name */}
+        <TextField
+          label="Agency Name"
+          name="agencyName"
+          fullWidth
+          required
+          value={formData.agencyName}
+          onChange={handleChange}
+        />
+        <div className="form-row mt-4">
+          {/* Agent Name */}
           <TextField
-            label="Full Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Enter your name"
+            label="Agent Name"
+            name="agentName"
             fullWidth
             required
+            value={formData.agentName}
+            onChange={handleChange}
+          />
+        </div>
+        {/* Email & Phone */}
+        <div className="form-row mt-4">
+          <TextField
+            label="Email ID"
+            type="email"
+            name="email"
+            fullWidth
+            required
+            value={formData.email}
+            onChange={handleChange}
+          />
+          <TextField
+            label="Phone No."
+            name="phone"
+            fullWidth
+            required
+            value={formData.phone}
+            onChange={handleChange}
           />
         </div>
 
-        {/* EMAIL & PHONE */}
-        <div className="form-row">
-          <div className="form-group">
-            <TextField
-              label="Email Address"
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Enter email"
-              fullWidth
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <TextField
-              label="Phone Number"
-              type="tel"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              placeholder="Phone number"
-              fullWidth
-              required
-            />
-          </div>
-        </div>
-
-        {/* TRAVEL DATE */}
-        <div className="form-group">
+        {/* Travel Date */}
+        <div className="form-group mt-4">
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DatePicker
               label="Preferred Travel Date"
@@ -127,54 +110,108 @@ export default function Contactform() {
             />
           </LocalizationProvider>
         </div>
+        <div className="form-group mt-4">
+          {/* Nights */}
+          <TextField
+            label="Duration (Nights)"
+            type="number"
+            name="nights"
+            fullWidth
+            required
+            value={formData.nights}
+            onChange={handleChange}
+          />
+        </div>
+        {/* Hotel Type */}
+        <FormControl>
+          <FormLabel>Type of Hotel</FormLabel>
+          <RadioGroup
+            row
+            name="hotelType"
+            value={formData.hotelType}
+            onChange={handleChange}
+          >
+            <FormControlLabel
+              value="3 Star"
+              control={<Radio />}
+              label="3 Star"
+            />
+            <FormControlLabel
+              value="4 Star"
+              control={<Radio />}
+              label="4 Star"
+            />
+            <FormControlLabel
+              value="5 Star"
+              control={<Radio />}
+              label="5 Star"
+            />
+          </RadioGroup>
+        </FormControl>
 
-        {/* DAYS & NIGHTS */}
-        <div className="custom-package-box">
-          <div className="form-row">
-            <div className="form-group">
-              <TextField
-                label="Number of Days"
-                type="number"
-                name="days"
-                value={formData.days}
-                onChange={handleChange}
-                inputProps={{ min: 1 }}
-                fullWidth
-              />
-            </div>
+        {/* Preferred Hotel */}
+        <TextField
+          label="Preferred Hotel (if any)"
+          name="preferredHotel"
+          fullWidth
+          value={formData.preferredHotel}
+          onChange={handleChange}
+        />
 
-            <div className="form-group">
-              <TextField
-                label="Number of Nights"
-                type="number"
-                value={formData.nights}
-                fullWidth
-                InputProps={{ readOnly: true }}
-              />
-              {/* Hidden input for EmailJS */}
-              <input type="hidden" name="nights" value={formData.nights} />
-            </div>
-          </div>
+        {/* Rooms / Adults */}
+        <div className="form-row mt-4">
+          <TextField
+            label="No. of Rooms"
+            type="number"
+            name="rooms"
+            fullWidth
+            value={formData.rooms}
+            onChange={handleChange}
+          />
+          <TextField
+            label="Adults"
+            type="number"
+            name="adults"
+            fullWidth
+            value={formData.adults}
+            onChange={handleChange}
+          />
         </div>
 
-        {/* MESSAGE */}
-       
+        {/* Kids */}
+        <div className="form-row mt-4">
           <TextField
-            label="Your Requirements"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            placeholder="Destinations, budget, hotel type, number of travelers..."
-       multiline="true"
-            rows={6}
+            label="Kids"
+            type="number"
+            name="kids"
             fullWidth
-            
-            required
+            value={formData.kids}
+            onChange={handleChange}
           />
-     
-
+          <TextField
+            label="Kids Age"
+            name="kidsAge"
+            fullWidth
+            placeholder="Eg: 5, 8"
+            value={formData.kidsAge}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-group mt-4">
+          {/* Requirement */}
+          <TextField
+            label="Requirement"
+            name="requirement"
+            multiline
+            rows={5}
+            fullWidth
+            required
+            value={formData.requirement}
+            onChange={handleChange}
+          />
+        </div>
         <button type="submit" className="contact-submit-btn">
-          Submit Custom Package
+          Submit Request
         </button>
       </form>
     </div>

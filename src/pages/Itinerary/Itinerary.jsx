@@ -668,6 +668,18 @@ const Itinerary = () => {
     setModalOpen(true);
   };
 
+  const handleCustomItineraryClick = () => {
+    const customPkg = travelPackages.find(
+      (p) => p.title === "Custom Itinerary",
+    );
+
+    if (!customPkg) return;
+
+    setSelectedPackage(customPkg.id);
+    setSelectedPackageData(customPkg);
+    setModalOpen(false);
+  };
+
   useEffect(() => {
     if (sectionRef.current) {
       sectionRef.current.scrollIntoView({
@@ -746,7 +758,11 @@ const Itinerary = () => {
 
             {/* FOOTER */}
             <div className="modal-footer">
-              <button className="btn btn-dark w-100" onClick={handleScroll} style={{cursor : "pointer"}}>
+              <button
+                className="btn btn-dark w-100"
+                onClick={handleScroll}
+                style={{ cursor: "pointer" }}
+              >
                 View Full Itinerary
               </button>
               <button
@@ -764,48 +780,65 @@ const Itinerary = () => {
         <div className="container itinerary-container py-4">
           {/* PACKAGE CARDS */}
           <div className="row card-grid">
-            {travelPackages
-              .filter((e) => e.title !== "Custom Itinerary")
-              .map((pkg) => (
+            {travelPackages.map((pkg) => {
+              const isCustom = pkg.title === "Custom Itinerary";
+
+              return (
                 <div key={pkg.id} className="col-12 col-md-6 col-lg-4">
-                  <div className="travel-card-2">
-                    {/* IMAGE */}
-                    <div className="travel-card-img-2">
-                      <img src={pkg.image} alt={pkg.title} />
+                  <div
+                    className={`travel-card-2 ${
+                      isCustom ? "custom-itinerary-card" : ""
+                    }`}
+                    onClick={isCustom ? handleCustomItineraryClick : undefined}
+                    style={{ cursor: isCustom ? "pointer" : "default" }}
+                  >
+                    {isCustom ? (
+                      /* ===== CUSTOM ITINERARY CARD ===== */
+                      <div className="custom-card-content">
+                        <h5 className="custom-title">{pkg.title}</h5>
+                        <div className="custom-plus-icon">+</div>
+                      </div>
+                    ) : (
+                      /* ===== NORMAL CARD ===== */
+                      <>
+                        <div className="travel-card-img-2">
+                          <img src={pkg.image} alt={pkg.title} />
 
-                      {/* BADGES */}
-                      <div className="travel-badges-2">
-                        {pkg.destinations.map((dest) => (
+                          <div className="travel-badges-2">
+                            {pkg.destinations.map((dest) => (
+                              <span
+                                key={dest}
+                                className={`badge-pill ${dest
+                                  .toLowerCase()
+                                  .replace(" ", "-")}`}
+                              >
+                                {dest}
+                              </span>
+                            ))}
+                          </div>
+
+                          <div className="travel-overlay-2">
+                            <h5>{pkg.title}</h5>
+                            <Clock className="clock-icon" />{" "}
+                            <span>{pkg.duration}</span>
+                          </div>
+                        </div>
+
+                        <div className="travel-card-body-2">
+                          <p>{pkg.summary}</p>
                           <span
-                            key={dest}
-                            className={`badge-pill ${dest.toLowerCase().replace(" ", "-")}`}
+                            className="travel-link-2"
+                            onClick={() => handlePackageClick(pkg)}
                           >
-                            {dest}
+                            View Details →
                           </span>
-                        ))}
-                      </div>
-
-                      {/* OVERLAY TEXT */}
-                      <div className="travel-overlay-2">
-                        <h5>{pkg.title}</h5>
-                        <Clock className="clock-icon" />{" "}
-                        <span>{pkg.duration}</span>
-                      </div>
-                    </div>
-
-                    {/* BODY */}
-                    <div className="travel-card-body-2">
-                      <p>{pkg.summary}</p>
-                      <span
-                        className="travel-link-2"
-                        onClick={() => handlePackageClick(pkg)} style={{cursor : "pointer"}}
-                      >
-                        View Details →
-                      </span>
-                    </div>
+                        </div>
+                      </>
+                    )}
                   </div>
                 </div>
-              ))}
+              );
+            })}
           </div>
 
           {/* SECTION TITLE */}
@@ -830,7 +863,7 @@ const Itinerary = () => {
           {selectedPkg &&
             (selectedPkg.title === "Custom Itinerary" ? (
               /* ===== CONTACT FORM ===== */
-              <div className="custom-itinerary-form" >
+              <div className="custom-itinerary-form">
                 {/* Replace this with your actual contact form component */}
                 <Contactform />
               </div>
