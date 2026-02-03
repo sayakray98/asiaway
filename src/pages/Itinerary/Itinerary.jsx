@@ -749,46 +749,48 @@ const Itinerary = () => {
         <div className="container itinerary-container py-4">
           {/* PACKAGE CARDS */}
           <div className="row card-grid">
-            {travelPackages.map((pkg) => (
-              <div key={pkg.id} className="col-12 col-md-6 col-lg-4">
-                <div className="travel-card-2">
-                  {/* IMAGE */}
-                  <div className="travel-card-img-2">
-                    <img src={pkg.image} alt={pkg.title} />
+            {travelPackages
+              .filter(e => e.title !== "Custom Itinerary")
+              .map((pkg) => (
+                <div key={pkg.id} className="col-12 col-md-6 col-lg-4">
+                  <div className="travel-card-2">
+                    {/* IMAGE */}
+                    <div className="travel-card-img-2">
+                      <img src={pkg.image} alt={pkg.title} />
 
-                    {/* BADGES */}
-                    <div className="travel-badges-2">
-                      {pkg.destinations.map((dest) => (
-                        <span
-                          key={dest}
-                          className={`badge-pill ${dest.toLowerCase().replace(" ", "-")}`}
-                        >
-                          {dest}
-                        </span>
-                      ))}
+                      {/* BADGES */}
+                      <div className="travel-badges-2">
+                        {pkg.destinations.map((dest) => (
+                          <span
+                            key={dest}
+                            className={`badge-pill ${dest.toLowerCase().replace(" ", "-")}`}
+                          >
+                            {dest}
+                          </span>
+                        ))}
+                      </div>
+
+                      {/* OVERLAY TEXT */}
+                      <div className="travel-overlay-2">
+                        <h5>{pkg.title}</h5>
+                        <Clock className="clock-icon" />{" "}
+                        <span>{pkg.duration}</span>
+                      </div>
                     </div>
 
-                    {/* OVERLAY TEXT */}
-                    <div className="travel-overlay-2">
-                      <h5>{pkg.title}</h5>
-                      <Clock className="clock-icon" />{" "}
-                      <span>{pkg.duration}</span>
+                    {/* BODY */}
+                    <div className="travel-card-body-2">
+                      <p>{pkg.summary}</p>
+                      <span
+                        className="travel-link-2"
+                        onClick={() => handlePackageClick(pkg)}
+                      >
+                        View Details →
+                      </span>
                     </div>
-                  </div>
-
-                  {/* BODY */}
-                  <div className="travel-card-body-2">
-                    <p>{pkg.summary}</p>
-                    <span
-                      className="travel-link-2"
-                      onClick={() => handlePackageClick(pkg)}
-                    >
-                      View Details →
-                    </span>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
 
           {/* SECTION TITLE */}
@@ -814,10 +816,8 @@ const Itinerary = () => {
             (selectedPkg.title === "Custom Itinerary" ? (
               /* ===== CONTACT FORM ===== */
               <div className="custom-itinerary-form">
-                <h3>Plan Your Custom Itinerary</h3>
-
                 {/* Replace this with your actual contact form component */}
-                <Contactform/>
+                <Contactform />
               </div>
             ) : (
               /* ===== NORMAL PACKAGE DETAILS ===== */
