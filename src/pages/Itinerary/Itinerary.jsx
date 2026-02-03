@@ -795,7 +795,12 @@ const Itinerary = () => {
                     {isCustom ? (
                       /* ===== CUSTOM ITINERARY CARD ===== */
                       <div className="custom-card-content">
-                        <h5 className="custom-title">{pkg.title}</h5>
+                        <h5 className="custom-title">
+                          Build a Custom Itinerary Can’t find the right package?
+                          Tell us your clients’ travel requirements and let our
+                          destination experts craft a personalized itinerary for
+                          them.
+                        </h5>
                         <div className="custom-plus-icon">+</div>
                       </div>
                     ) : (
