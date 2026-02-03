@@ -1,16 +1,22 @@
 import React, { useState, useEffect } from "react";
 import "./Contactform.css";
 import emailjs from "emailjs-com";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import dayjs from "dayjs";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
 
 export default function Contactform() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    travelDate: "",
     days: 4,
     nights: 3,
     message: "",
+    travelDate: null,
   });
 
   // Auto-calculate nights
@@ -61,15 +67,15 @@ export default function Contactform() {
       </p>
 
       <form className="contact-form" onSubmit={sendEmail}>
-        {/* NAME */}
+        {/* FULL NAME */}
         <div className="form-group">
-          <label>Full Name</label>
-          <input
-            type="text"
+          <TextField
+            label="Full Name"
             name="name"
             value={formData.name}
             onChange={handleChange}
             placeholder="Enter your name"
+            fullWidth
             required
           />
         </div>
@@ -77,25 +83,27 @@ export default function Contactform() {
         {/* EMAIL & PHONE */}
         <div className="form-row">
           <div className="form-group">
-            <label>Email Address</label>
-            <input
+            <TextField
+              label="Email Address"
               type="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
               placeholder="Enter email"
+              fullWidth
               required
             />
           </div>
 
           <div className="form-group">
-            <label>Phone Number</label>
-            <input
+            <TextField
+              label="Phone Number"
               type="tel"
               name="phone"
               value={formData.phone}
               onChange={handleChange}
               placeholder="Phone number"
+              fullWidth
               required
             />
           </div>
@@ -103,55 +111,67 @@ export default function Contactform() {
 
         {/* TRAVEL DATE */}
         <div className="form-group">
-          <label>Preferred Travel Date</label>
-          <input
-            type="date"
-            name="travelDate"
-            value={formData.travelDate}
-            onChange={handleChange}
-          />
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DatePicker
+              label="Preferred Travel Date"
+              value={formData.travelDate}
+              onChange={(newValue) =>
+                setFormData({ ...formData, travelDate: newValue })
+              }
+              slotProps={{
+                textField: {
+                  fullWidth: true,
+                  name: "travelDate",
+                },
+              }}
+            />
+          </LocalizationProvider>
         </div>
 
-        {/* CUSTOM DAY & NIGHT */}
+        {/* DAYS & NIGHTS */}
         <div className="custom-package-box">
-          <h4>Trip Duration</h4>
-
           <div className="form-row">
             <div className="form-group">
-              <label>Number of Days</label>
-              <input
+              <TextField
+                label="Number of Days"
                 type="number"
-                min="1"
                 name="days"
                 value={formData.days}
                 onChange={handleChange}
+                inputProps={{ min: 1 }}
+                fullWidth
               />
             </div>
 
             <div className="form-group">
-              <label>Number of Nights</label>
-              <input
+              <TextField
+                label="Number of Nights"
                 type="number"
-                name="nights"
                 value={formData.nights}
-                readOnly
+                fullWidth
+                InputProps={{ readOnly: true }}
               />
+              {/* Hidden input for EmailJS */}
+              <input type="hidden" name="nights" value={formData.nights} />
             </div>
           </div>
         </div>
 
         {/* MESSAGE */}
-        <div className="form-group">
-          <label>Your Requirements</label>
-          <textarea
-            rows="4"
+       
+          <TextField
+            label="Your Requirements"
             name="message"
             value={formData.message}
             onChange={handleChange}
             placeholder="Destinations, budget, hotel type, number of travelers..."
+       multiline="true"
+            rows={6}
+            fullWidth
+            
             required
           />
-        </div>
+     
 
         <button type="submit" className="contact-submit-btn">
           Submit Custom Package
