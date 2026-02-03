@@ -65,7 +65,7 @@ export default function Fleets() {
                 </p> */}
 
                 <button className="btn mt-4">
-                  <a href="https://www.asiawayholidays.com/contact">Book Now</a>
+                  <Link to="/contact">Book Now</Link>
                   <i className="fas fa-chevron-right"></i>
                 </button>
               </div>
@@ -82,7 +82,7 @@ export default function Fleets() {
                 </p> */}
 
                 <button className="btn mt-4">
-                  <a href="https://www.asiawayholidays.com/contact">Book Now</a>
+                  <Link to="/contact">Book Now</Link>
                   <i className="fas fa-chevron-right"></i>
                 </button>
               </div>
@@ -105,7 +105,7 @@ export default function Fleets() {
                 </p> */}
 
                 <button className="btn mt-4">
-                  <a href="https://www.asiawayholidays.com/contact">Book Now</a>
+                  <Link to="/contact">Book Now</Link>
                   <i className="fas fa-chevron-right"></i>
                 </button>
               </div>
@@ -122,7 +122,7 @@ export default function Fleets() {
                Group Tours – Coaches and larger vehicles for leisure groups and MICE tours, commonly including 23-seater Toyota Coaster or 44-seater coaches.  </p> */}
 
                 <button className="btn mt-4">
-                  <a href="https://www.asiawayholidays.com/contact">Book Now</a>
+                  <Link to="/contact">Book Now</Link>
                   <i className="fas fa-chevron-right"></i>
                 </button>
               </div>
@@ -145,7 +145,7 @@ export default function Fleets() {
                 </p> */}
 
                 <button className="btn mt-4">
-                  <a href="https://www.asiawayholidays.com/contact">Book Now</a>
+                  <Link to="/contact">Book Now</Link>
                   <i className="fas fa-chevron-right"></i>
                 </button>
               </div>
