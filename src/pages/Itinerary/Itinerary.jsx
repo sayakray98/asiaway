@@ -798,7 +798,7 @@ const Itinerary = () => {
                       <p>{pkg.summary}</p>
                       <span
                         className="travel-link-2"
-                        onClick={() => handlePackageClick(pkg)}
+                        onClick={() => handlePackageClick(pkg)} style={{cursor : "pointer"}}
                       >
                         View Details →
                       </span>
