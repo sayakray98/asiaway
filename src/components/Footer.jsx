@@ -97,7 +97,7 @@ export default function Footer() {
                       <a href="mailto:admin@asiawayholidays.com">
                         &nbsp; admin@asiawayholidays.com{" "}
                       </a>{" "}
-                      <br />
+                     
                    <span className="custom-para" >   (For general queries & partnerships / tie-ups)</span>
                     </p>
                   </div>

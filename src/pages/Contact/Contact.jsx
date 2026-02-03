@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "../Contact/Contact.css";
 import { Link } from "react-router-dom";
+import emailjs from "emailjs-com";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -16,6 +17,27 @@ export default function Contact() {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_w611k03",
+      "template_v4k952k",
+      e.target,
+      "H8ycHLmBCtL0E7bwt"
+    )
+    .then(() => {
+      alert("Message sent successfully!");
+    })
+    .catch((error) => {
+      console.error(error);
+      alert("Failed to send message");
+    });
+
+    e.target.reset();
   };
 
 const handleSubmit = async (e) => {
@@ -69,7 +91,7 @@ const handleSubmit = async (e) => {
           <div className="row">
             <div className="col-lg-8 m-0 p-0">
               <div className="contactForm">
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={sendEmail}>
                   <div className="row mb-3">
                     <div className="col-md-6">
                       <label className="form-label">First Name</label>
