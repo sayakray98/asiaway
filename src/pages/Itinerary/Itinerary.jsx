@@ -746,7 +746,7 @@ const Itinerary = () => {
 
             {/* FOOTER */}
             <div className="modal-footer">
-              <button className="btn btn-dark w-100" onClick={handleScroll}>
+              <button className="btn btn-dark w-100" onClick={handleScroll} style={{cursor : "pointer"}}>
                 View Full Itinerary
               </button>
               <button
