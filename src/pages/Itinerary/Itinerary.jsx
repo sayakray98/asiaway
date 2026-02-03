@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import image1 from "../../assets/images/hu-chen-5O6c_pLziXs-unsplash.jpg"
-import image2 from "../../assets/images/eirik-skarstein-6yotiQwW0Gs-unsplash.jpg"
+import image1 from "../../assets/images/hu-chen-5O6c_pLziXs-unsplash.jpg";
+import image2 from "../../assets/images/eirik-skarstein-6yotiQwW0Gs-unsplash.jpg";
 import {
   Tabs,
   TabsContent,
@@ -34,6 +34,7 @@ import {
 } from "lucide-react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import Contactform from "../Contact/ContactForm/Contactform";
 
 const destinationImages = {
   singapore:
@@ -44,8 +45,7 @@ const destinationImages = {
     "https://images.unsplash.com/photo-1609946860441-a51ffcf22208?w=800&q=80",
   cruise:
     "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=800&q=80",
-  nightSafari:
-    image1,
+  nightSafari: image1,
   universalStudios:
     "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=800&q=80",
   gardensByBay:
@@ -56,8 +56,7 @@ const destinationImages = {
     "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&q=80",
   batuCaves:
     "https://images.unsplash.com/photo-1508062878650-88b52897f298?w=800&q=80",
-  skyBridge:
-    image2,
+  skyBridge: image2,
   islandHopping:
     "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80",
 };
@@ -587,6 +586,29 @@ const travelPackages = [
       },
     ],
   },
+
+  {
+    id: "Custom Itinerary",
+    title: "Custom Itinerary",
+    destinations: ["Singapore", "Kuala Lumpur", "Langkawi"],
+
+    days: [
+      {
+        day: 1,
+        title: "Arrival & Night Safari",
+        location: "Singapore",
+        coordinates: "1.4043° N, 103.7930° E",
+        image: destinationImages.nightSafari,
+        icon: <Plane className="h-5 w-5" />,
+        activities: [
+          "Arrival in Singapore",
+          "Evening visit to Night Safari",
+          "Tram Ride experience",
+          "Animal Show",
+        ],
+      },
+    ],
+  },
 ];
 
 const getLocationColor = (location) => {
@@ -633,6 +655,8 @@ const Itinerary = () => {
     setSelectedPackageData(pkg);
     setModalOpen(true);
   };
+
+  const selectedPkg = travelPackages.find((p) => p.id === selectedPackage);
 
   return (
     <>
@@ -747,8 +771,8 @@ const Itinerary = () => {
                     {/* OVERLAY TEXT */}
                     <div className="travel-overlay-2">
                       <h5>{pkg.title}</h5>
-
-                  <Clock className="clock-icon" />    <span>{pkg.duration}</span>
+                      <Clock className="clock-icon" />{" "}
+                      <span>{pkg.duration}</span>
                     </div>
                   </div>
 
@@ -786,24 +810,33 @@ const Itinerary = () => {
           </div>
 
           {/* SELECTED PACKAGE */}
-          {travelPackages
-            .filter((p) => p.id === selectedPackage)
-            .map((pkg) => (
-              <div key={pkg.id}>
+          {selectedPkg &&
+            (selectedPkg.title === "Custom Itinerary" ? (
+              /* ===== CONTACT FORM ===== */
+              <div className="custom-itinerary-form">
+                <h3>Plan Your Custom Itinerary</h3>
+
+                {/* Replace this with your actual contact form component */}
+                <Contactform/>
+              </div>
+            ) : (
+              /* ===== NORMAL PACKAGE DETAILS ===== */
+              <div key={selectedPkg.id}>
                 {/* HERO IMAGE */}
                 <div className="detail-hero">
-                  <img src={pkg.image} alt={pkg.title} />
+                  <img src={selectedPkg.image} alt={selectedPkg.title} />
                   <div className="detail-hero-overlay" />
 
                   <div className="detail-hero-content">
                     <span className="detail-badge">Singapore</span>
-                    <h4>{pkg.title}</h4>
-                     <Calendar className="calendar-icon" /> <small>4 Nights / 5 Days</small>
+                    <h4>{selectedPkg.title}</h4>
+                    <Calendar className="calendar-icon" />{" "}
+                    <small>4 Nights / 5 Days</small>
                   </div>
                 </div>
 
                 <div className="detail-days">
-                  {pkg.days.map((day) => (
+                  {selectedPkg.days.map((day) => (
                     <div key={day.day} className="detail-day-card">
                       {/* LEFT IMAGE */}
                       <div className="detail-day-img">
@@ -815,7 +848,8 @@ const Itinerary = () => {
                       <div className="detail-day-content">
                         <div className="detail-day-header">
                           <h6>
-                          <span className="icon-detail">{day.icon}</span> &nbsp; &nbsp; &nbsp;   Day {day.day}: {day.title}
+                            <span className="icon-detail">{day.icon}</span>
+                            &nbsp;&nbsp;&nbsp; Day {day.day}: {day.title}
                           </h6>
                           <span className="detail-location-badge">
                             {day.location}
@@ -823,7 +857,8 @@ const Itinerary = () => {
                         </div>
 
                         <div className="detail-coordinates">
-                        <MapPin className="mappin-icon" /> &nbsp;Coordinates: {day.coordinates}
+                          <MapPin className="mappin-icon" /> &nbsp; Coordinates:{" "}
+                          {day.coordinates}
                         </div>
 
                         <ul className="detail-activity-list">

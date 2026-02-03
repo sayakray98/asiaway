@@ -1,0 +1,125 @@
+/* ===== CONTACT FORM WRAPPER ===== */
+.contact-form-wrapper {
+  max-width: 620px;
+  margin: 50px auto;
+  padding: 32px 28px;
+  background: linear-gradient(180deg, #ffffff, #f9fbff);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eef2f7;
+  text-align: left;
+}
+
+/* ===== TITLE & SUBTITLE ===== */
+.contact-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.contact-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 26px;
+  line-height: 1.5;
+}
+
+/* ===== FORM LAYOUT ===== */
+.contact-form {
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-row {
+  display: flex;
+  gap: 18px;
+}
+
+/* ===== LABEL ===== */
+.contact-form label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+/* ===== INPUTS ===== */
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 14px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  outline: none;
+  transition: all 0.25s ease;
+  color: #111827;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+/* ===== FOCUS STATE ===== */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+/* ===== PLACEHOLDER ===== */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.contact-submit-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #258A4F, #196338);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 12px 25px #258A4F;
+}
+
+/* ===== BUTTON HOVER ===== */
+.contact-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 35px #258A4F;
+}
+
+/* ===== BUTTON ACTIVE ===== */
+.contact-submit-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 10px 20px #258A4F;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 640px) {
+  .contact-form-wrapper {
+    margin: 20px 12px;
+    padding: 24px 18px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .contact-title {
+    font-size: 20px;
+  }
+}
