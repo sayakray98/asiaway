@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import image1 from "../../assets/images/hu-chen-5O6c_pLziXs-unsplash.jpg";
 import image2 from "../../assets/images/eirik-skarstein-6yotiQwW0Gs-unsplash.jpg";
 import {
@@ -652,10 +652,30 @@ const Itinerary = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedPackageData, setSelectedPackageData] = useState(null);
 
+  const sectionRef = useRef(null);
+
+  const handleScroll = () => {
+    setSelectedPackage(selectedPackageData.id);
+    setModalOpen(false);
+    sectionRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   const handlePackageClick = (pkg) => {
     setSelectedPackageData(pkg);
     setModalOpen(true);
   };
+
+  useEffect(() => {
+    if (sectionRef.current) {
+      sectionRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, [selectedPackage]);
 
   const selectedPkg = travelPackages.find((p) => p.id === selectedPackage);
 
@@ -726,13 +746,7 @@ const Itinerary = () => {
 
             {/* FOOTER */}
             <div className="modal-footer">
-              <button
-                className="btn btn-dark w-100"
-                onClick={() => {
-                  setSelectedPackage(selectedPackageData.id);
-                  setModalOpen(false);
-                }}
-              >
+              <button className="btn btn-dark w-100" onClick={handleScroll}>
                 View Full Itinerary
               </button>
               <button
@@ -751,7 +765,7 @@ const Itinerary = () => {
           {/* PACKAGE CARDS */}
           <div className="row card-grid">
             {travelPackages
-              .filter(e => e.title !== "Custom Itinerary")
+              .filter((e) => e.title !== "Custom Itinerary")
               .map((pkg) => (
                 <div key={pkg.id} className="col-12 col-md-6 col-lg-4">
                   <div className="travel-card-2">
@@ -798,7 +812,7 @@ const Itinerary = () => {
           <h6 className="fw-semibold mb-2 detail-head">Detailed Itinerary</h6>
 
           {/* TABS */}
-          <div className="package-tabs">
+          <div className="package-tabs" ref={sectionRef}>
             {travelPackages.map((pkg) => (
               <button
                 key={pkg.id}
@@ -816,7 +830,7 @@ const Itinerary = () => {
           {selectedPkg &&
             (selectedPkg.title === "Custom Itinerary" ? (
               /* ===== CONTACT FORM ===== */
-              <div className="custom-itinerary-form">
+              <div className="custom-itinerary-form" >
                 {/* Replace this with your actual contact form component */}
                 <Contactform />
               </div>
