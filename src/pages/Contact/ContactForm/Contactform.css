@@ -53,39 +53,39 @@
   margin-bottom: 6px;
 }
 
-input[type="text"] {
+.contact-form input[type="text"] {
   border: none !important;
 }
-input[type="text"]:hover {
+.contact-form input[type="text"]:hover {
   border: none;
 }
-input[type="email"] {
+.contact-form input[type="email"] {
   border: none !important;
 }
-input[type="email"]:hover {
+.contact-form input[type="email"]:hover {
   border: none;
 }
-input[type="tel"] {
+.contact-form input[type="tel"] {
   border: none !important;
 }
-input[type="tel"]:hover {
+.contact-form input[type="tel"]:hover {
   border: none;
 }
-input[type="number"] {
+.contact-form input[type="number"] {
   border: none !important;
 }
-input[type="number"]:hover {
+.contact-form input[type="number"]:hover {
   border: none;
 }
-input[type="message"] {
+.contact-form input[type="message"] {
   border: none !important;
 }
-input[type="message"]:hover {
+.contact-form input[type="message"]:hover {
   border: none;
 }
 
-/* ===== INPUTS ===== */
-.contact-form input,
+/* ===== .contact-form INPUTS ===== */
+.contact-form .contact-form input,
 .contact-form textarea {
   padding: 12px 14px;
   font-size: 14px;
@@ -102,14 +102,14 @@ input[type="message"]:hover {
 }
 
 /* ===== FOCUS STATE ===== */
-.contact-form input:focus,
+.contact-form .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: #2563eb;
   box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
 }
 
 /* ===== PLACEHOLDER ===== */
-.contact-form input::placeholder,
+.contact-form .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: #9ca3af;
 }
