@@ -84,57 +84,57 @@
 /* ============================= */
 
 /* Input text */
-.MuiInputBase-input {
+.contact-page .MuiInputBase-input {
   color: #ffffff !important;
 }
 
 /* Label text */
-.MuiInputLabel-root {
+.contact-page .MuiInputLabel-root {
   color: #ffffff !important;
 }
 
 /* Focused label */
-.MuiInputLabel-root.Mui-focused {
+.contact-page .MuiInputLabel-root.Mui-focused {
   color: #ffffff !important;
 }
 
 /* Placeholder */
-.MuiInputBase-input::placeholder {
+.contact-page .MuiInputBase-input::placeholder {
   color: rgba(255, 255, 255, 0.7) !important;
 }
 
 /* Caret (cursor) */
-.MuiInputBase-input {
+.contact-page .MuiInputBase-input {
   caret-color: #ffffff !important;
 }
 
 /* Outline border */
-.MuiOutlinedInput-root fieldset {
+.contact-page .MuiOutlinedInput-root fieldset {
   border-color: #ffffff !important;
 }
 
 /* Hover border */
-.MuiOutlinedInput-root:hover fieldset {
+.contact-page .MuiOutlinedInput-root:hover fieldset {
   border-color: #ffffff !important;
 }
 
 /* Focus border */
-.MuiOutlinedInput-root.Mui-focused fieldset {
+.contact-page .MuiOutlinedInput-root.Mui-focused fieldset {
   border-color: #ffffff !important;
 }
 
 /* Select text */
-.MuiSelect-select {
+.contact-page .MuiSelect-select {
   color: #ffffff !important;
 }
 
 /* Select arrow icon */
-.MuiSvgIcon-root {
+.contact-page .MuiSvgIcon-root {
   color: #ffffff !important;
 }
 
 /* Multiline textarea */
-.MuiOutlinedInput-root textarea {
+.contact-page .MuiOutlinedInput-root textarea {
   color: #ffffff !important;
 }
 
