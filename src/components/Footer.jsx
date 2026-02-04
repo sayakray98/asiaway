@@ -98,7 +98,7 @@ export default function Footer() {
                         &nbsp; admin@asiawayholidays.com{" "}
                       </a>{" "}
                      
-                   <span className="custom-para" >   (For general queries & partnerships / tie-ups)</span>
+                   <span className="custom-para" >   (For general queries / tie-ups)</span>
                     </p>
                   </div>
 
