@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import image1 from "../../assets/images/hu-chen-5O6c_pLziXs-unsplash.jpg";
 import image2 from "../../assets/images/eirik-skarstein-6yotiQwW0Gs-unsplash.jpg";
+import image3 from "../../assets/images/toor.jpeg";
 import {
   Tabs,
   TabsContent,
@@ -43,7 +44,7 @@ const destinationImages = {
   kualaLumpur:
     "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&q=80",
   langkawi:
-    "https://images.unsplash.com/photo-1609946860441-a51ffcf22208?w=800&q=80",
+  image3,
   cruise:
     "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=800&q=80",
   nightSafari: image1,
