@@ -16,6 +16,7 @@
     "@emotion/styled": "^11.14.1",
     "@fontsource/dm-sans": "^5.2.8",
     "@fontsource/playfair-display": "^5.2.8",
+    "@mui/icons-material": "^7.3.7",
     "@mui/material": "^7.3.7",
     "@mui/x-date-pickers": "^8.27.0",
     "@radix-ui/react-dialog": "^1.1.15",

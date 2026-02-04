@@ -591,7 +591,7 @@ const travelPackages = [
   {
     id: "Custom Itinerary",
     title: "Custom Itinerary",
-    destinations: ["Singapore", "Kuala Lumpur", "Langkawi"],
+    destinations: ["Singapore", "Kuala Lumpur", "Langkawi", "Cruise"],
 
     days: [
       {
@@ -795,11 +795,23 @@ const Itinerary = () => {
                     {isCustom ? (
                       /* ===== CUSTOM ITINERARY CARD ===== */
                       <div className="custom-card-content">
+                        <h4>
+                          Build Custom <br /> Itinerary
+                        </h4>
+                        {pkg.destinations.map((dest) => (
+                          <span
+                            key={dest}
+                            className={`badge-pill new-badge-pill ${dest
+                              .toLowerCase()
+                              .replace(" ", "-")}`}
+                          >
+                            {dest}
+                          </span>
+                        ))}
                         <h5 className="custom-title">
-                          Build a Custom Itinerary Can’t find the right package?
-                          Tell us your clients’ travel requirements and let our
-                          destination experts craft a personalized itinerary for
-                          them.
+                          Can't find the right package? Tell us your clients'
+                          travel requirements and let our destination experts
+                          craft a personalized itinerary for them.
                         </h5>
                         <div className="custom-plus-icon">+</div>
                       </div>

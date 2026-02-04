@@ -503,31 +503,71 @@
 
 .custom-title {
   width: 92%;
-  margin: 60px auto;
-  color: #000000;
+  margin: 40px auto;
+  color: #ffffff;
   padding: 4px;
   border-radius: 6px;
   font-size: 15px;
   text-align: left;
   line-height: 28px;
+  font-weight: bold;
 }
 
-.custom-plus-icon {
+.custom-card-content h4 {
+  width: 92%;
+  margin: 30px auto;
+  color: #ffffff;
+  padding: 4px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: left;
+  line-height: 30px;
+}
+.custom-card-content {
+}
+
+.new-badge-pill {
+  text-align: left;
+  margin-left: 2px;
+}
+
+.custom-plus-icon
+
+ {
+    position: absolute;
+    left: 86%;
+    transform: translate(-50%, -50%);
+    top: 89%;
+    font-size: 30px;
+    color: #fefefe;
+    background: green;
+    width: 12mm;
+    border-radius: 50px;
+    box-shadow: 0px 0px 23px 0px #88a18b;
+}
+
+.custom-itinerary-card {
+  position: relative;
+  z-index: 1;
+  overflow: hidden; /* IMPORTANT */
+}
+
+/* Background image + overlay */
+.custom-itinerary-card::before {
+  content: "";
   position: absolute;
-  left: 86%;
-  transform: translate(-50%, -50%);
-  top: 89%;
-  font-size: 30px;
-  color: #fefefe;
-  background: green;
-  width: 12mm;
-  border-radius: 50px;
-  box-shadow: 0px 0px 13px 5px #96db9e;
-}
+  inset: 0; /* replaces top/left/width/height */
+  z-index: -1;
 
-.custom-itinerary-card{
-  background: url("../../assets/images/plus-image.png") center/cover no-repeat;
-  
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)),
+    url("../../assets/images/singapre.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  pointer-events: none; /* IMPORTANT */
 }
 
 /* OVERLAY */
