@@ -3,19 +3,29 @@ button.btn {
   border-radius: 40px;
   display: flex;
   align-items: center;
-  box-shadow: 0px 3px 10px -1px #11702e !important;
-  transition: 0.3s all!important;
+  box-shadow: 0px 3px 10px -1px #11702e;
+  transition: background-color 0.3s ease, 
+              box-shadow 0.3s ease,
+              transform 0.2s ease;
 }
+
+button.btn:hover {
+  background-color: #155b31;
+  box-shadow: 0px 6px 15px -2px #0d4f22;
+  transform: translateY(-2px);
+  border: 1px solid #155b31;
+}
+
 
 button.btn a{
     text-decoration: none!important;
 }
 
-.btn:hover {
+/* .btn:hover {
   border: 0px solid !important;
   outline: none !important;
   transition: 0.3s all!important;
-}
+} */
 
 .mainsectionfleets {
   background: #fafafa;
