@@ -12,19 +12,24 @@ import Fleets from "./pages/Fleets/Fleets";
 import Travelmanagementservices from "./pages/ServicePage/Travelmanagementservices/Travelmanagementservices";
 import Blogs from "./Blog/Blogs";
 import Itinerary from "./pages/Itinerary/Itinerary";
+import ScrollToTop from "./pages/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <>
+
+      <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Travelmanagementservices />} />
-        <Route path="/fleets" element={<Fleets />} />
-        <Route path="/blog" element={<Blogs />} />
-        <Route path="/itinerary" element={<Itinerary />} />
-        <Route path="*" element={<Home />} />
+      
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Travelmanagementservices />} />
+          <Route path="/fleets" element={<Fleets />} />
+          <Route path="/blog" element={<Blogs />} />
+          <Route path="/itinerary" element={<Itinerary />} />
+          <Route path="*" element={<Home />} />
+        
       </Routes>
       <Mobilemenu />
     </>
