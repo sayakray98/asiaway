@@ -8,8 +8,8 @@
   font-family: "Poppins", sans-serif;
 }
 
-.contact-right .form-control, .contact-right .form-select, .contact-right textarea{
-  border: 0px solid;
+textarea#_r_5_{
+  border: 0px solid !important;
 }
 
 h5 {
