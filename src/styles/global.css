@@ -12,6 +12,10 @@ textarea#_r_5_{
   border: 0px solid !important;
 }
 
+textarea{
+  border: 0px solid !important;
+}
+
 h5 {
   font-family: "Poppins", sans-serif;
 }

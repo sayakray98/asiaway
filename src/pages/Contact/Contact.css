@@ -138,6 +138,10 @@
   color: #ffffff !important;
 }
 
+textarea{
+  border: 0px solid !important;
+}
+
 
 .contact-left {
   text-align: left !important;
